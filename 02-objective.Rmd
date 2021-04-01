@@ -1,0 +1,25 @@
+# Objectives
+
+The goal of this study is to evaluate how sex and ageing might affect the immune responses to Spn carriage development and its control, to understand intrinsic factors that may give protection for some carriers but increase susceptibility to diseases in others. More specifically,
+
+This will be done by identifying the components and describing their relationships of different layers of human biology during the response to Spn, and further modelling the complexity of the overall response by integrating each level. At first, a single-omics approach will be used to upon each cohort and data type to:
+
+-   profile the overall immune response of adults to Spn infection
+
+-   profile the overall immune response of adults to Spn infection, stratified by sex
+
+-   Identify sex-specific components and/or behaviors in immune response profiles
+
+-   profile the overall immune response of elderlies to Spn infection
+
+-   Identify age-specific components and/or behaviors in immune response profiles among elderlies and adults
+
+-   profile the overall immune response of elderlies to Spn infection, stratified by sex
+
+-   Identify sex-specific components and/or behaviors in immune response profiles among elderlies
+
+-   Identify age-specific components and/or behaviors in immune response profiles among elderlies and adults of same-sex
+
+-   Select the main components affected by sex and age to Spn infection
+
+With the main components selected, different layers of the nasal mucosa will be integrated with multi-omics approaches to describe the main components and its interactions related to sex and ageing factors during Spn infection, carriage development and influenza vaccine interactions.
