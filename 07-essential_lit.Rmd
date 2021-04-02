@@ -4,9 +4,9 @@
 
 ## Thesis
 
--   Adler's PhD Thesis
+-   Adler's PhD Thesis &rarr; Pneumococcal nasopharyngeal colonisation in adults
 
--   Elena's PhD Thesis
+-   Elena's PhD Thesis &rarr; The human lung immune responses to nasopharyngeal pneumococcal colonisation in healthy adults
 
 -   Fernando's Master Thesis
 
@@ -23,6 +23,9 @@
 -   [Inflammation induced by influenza virus impairs human innate immune control of pneumococcus](https://pubmed.ncbi.nlm.nih.gov/30374129/)
  
 -   [Pneumococcal colonization impairs mucosal immune responses to Live Attenuated Influenza Vaccine in adults](https://www.researchgate.net/publication/348794084_Pneumococcal_colonization_impairs_mucosal_immune_responses_to_Live_Attenuated_Influenza_Vaccine_in_adults)
+ 
+-   [Experimental human pneumococcal carriage models for vaccine research]()
+-   [Innate and adaptive nasal mucosal immune responses following experimental human pneumococcal colonization]()
 
 ### Sex Differences
 

@@ -1,169 +1,161 @@
 # Definitions
 
-	cross-over desing: is a repeated measurements design such that each experimental unit (patient) receives different treatments during the different time periods, i.e., the patients cross over from one treatment to another during the course of the trial
+cross-over design
 
-	
+:   is a repeated measurements design such that each experimental unit (patient) receives different treatments during the different time periods, i.e., the patients cross over from one treatment to another during the course of the trial
 
-	w. r. t - with respect to, with regard to
+w\. r. t
 
-	dependent/outcome variable: a variable whose value depends upon independent variable, is what is being measured in an experiment or evaluated in a mathematical equation. In the equation a = b/c, the dependent variable, a, is determined by the values of b and c.
+:   with respect to, with regard to	
 
-	Response variables: the response variable is the variable you are measuring and trying to explain. When you have a response variable, it is always paired with one or more explanatory variables. The explanatory variable(s) drives change in the response variable.
+Dependent/outcome variable
 
-	latent variables - as opposed to observable variables, are variables that are not directly observed but are rather inferred (through a mathematical model) from other variables that are observed (directly measured).
+:   A variable whose value depends upon independent variable, is what is being measured in an experiment or evaluated in a mathematical equation. In the equation a = b/c, the dependent variable, a, is determined by the values of b and c.
 
-	linear combination - a linear combination is an expression constructed from a set of terms by multiplying each term by a constant and adding the results (e.g. a linear combination of x and y would be any expression of the form ax + by, where a and b are constants).
+Response variables
 
-	covariance - is a measure of the joint variability of two random variables.
+:   The response variable is the variable you are measuring and trying to explain. When you have a response variable, it is always paired with one or more explanatory variables. The explanatory variable(s) drives change in the response variable.
 
-				- Covariance provides a measure of the strength of the correlation between two or more sets of random variates
+Latent variables
 
-				- cov(x,y) = SUM(i=1,...,N) (xi - mux)(yi - muy)/N
+:   As opposed to observable variables, are variables that are not directly observed but are rather inferred (through a mathematical model) from other variables that are observed (directly measured).
 
-	multicollinear variables:
+Covariance
 
-		- multicollinearity (also collinearity) is a phenomenon in which one predictor variable in a multiple regression model can be linearly predicted from the others with a substantial degree of accuracy. In this situation the coefficient estimates of the multiple regression may change erratically in response to small changes in the model or the data. Multicollinearity does not reduce the predictive power or reliability of the model as a whole, at least within the sample data set; it only affects calculations regarding individual predictors. That is, a multivariate regression model with collinear predictors can indicate how well the entire bundle of predictors predicts the outcome variable, but it may not give valid results about any individual predictor, or about which predictors are redundant with respect to others.
+:   is a measure of the joint variability of two random variables. Covariance provides a measure of the strength of the correlation between two or more sets of random variates.
 
-		- Multicollinearity occurs when your model includes multiple factors that are correlated not just to your response variable, but also to each other. In other words, it results when you have factors that are a bit redundant.
+    $Cov(x,y) = \Sigma_{i=1,…,N} (x_i - \mu_x)(y_i - \mu_y)/N$
 
-		- Multicollinearity increases the standard errors of the coefficients. Increased standard errors in turn means that coefficients for some independent variables may be found not to be significantly different from 0. In other words, by overinflating the standard errors, multicollinearity makes some variables statistically insignificant when they should be significant. Without multicollinearity (and thus, with lower standard errors), those coefficients might be significant.
+Linear combination
 
-		- severe multicollinearity is a major problem, because it increases the variance of the regression coefficients, making them unstable. The more variance they have, the more difficult it is to interpret the coefficients.
+:   A linear combination is an expression constructed from a set of terms by multiplying each term by a constant and adding the results (e.g. a linear combination of x and y would be any expression of the form ax + by, where a and b are constants).
 
-		- Warning Signs of Multicollinearity :
+Independent Component Analysis (ICA)
 
-			- A regression coefficient is not significant even though, theoretically, that variable should be highly correlated with Y.
+:   Is a statistical and computational technique for revealing hidden factors that underlie sets of random variables, measurements, or signals. In the model, the data variables are assumed to be linear or nonlinear mixtures of some unknown latent variables, and the mixing system is also unknown. The latent variables are assumed non-gaussian and mutually independent, and they are called the independent components of the observed data. These independent components, also called sources or factors, can be found by ICA.
 
-			- When you add or delete an X variable, the regression coefficients change dramatically.
+bipartite graphs
 
-			- You see a negative regression coefficient when your response should increase along with X.
+:   also called a bigraph, is a set of graph vertices decomposed into two disjoint sets such that no two graph vertices within the same set are adjacent.
 
-			- You see a positive regression coefficient when the response should decrease as X increases.
+Discriminant Analysis
 
-			- Your X variables have high pairwise correlations.
+:    i.g., the prediction of group membership from the levels of continuous predictor variables
 
-		- Ways to measure multicollinearity:
+Partial Least Squares  (PLS) regression
 
-			- Variance Inflation Factor (VIF): assesses how much the variance of an estimated regression coefficient increases if your predictors are correlated
+:   Partial least squares (PLS) regression is a technique that reduces the predictors to a smaller set of uncorrelated components and performs least squares regression on these components, instead of on the original data. PLS regression is especially useful when your predictors are highly collinear, or when you have more predictors than observations and ordinary least-squares regression either produces coefficients with high standard errors or fails completely. PLS does not assume that the predictors are fixed, unlike multiple regression. This means that the predictors can be measured with error, making PLS more robust to measurement uncertainty.
 
-				- VIF is equal to 1, there is no multicollinearity among factors
+Multicollinearity (collinearity)
 
-				- VIF is greater than 1, the predictors may be moderately correlated
+:   is a phenomenon in which one predictor variable in a multiple regression model can be linearly predicted from the others with a substantial degree of accuracy. In this situation the coefficient estimates of the multiple regression may change erratically in response to small changes in the model or the data. Multicollinearity does not reduce the predictive power or reliability of the model as a whole, at least within the sample data set; it only affects calculations regarding individual predictors. That is, a multivariate regression model with collinear predictors can indicate how well the entire bundle of predictors predicts the outcome variable, but it may not give valid results about any individual predictor, or about which predictors are redundant with respect to others.
 
-				- VIF between 5 and 10, indicates high correlation that may be problematic
+    Multicollinearity occurs when your model includes multiple factors that are correlated not just to your response variable, but also to each other. In other words, it results when you have factors that are a bit redundant.
 
-				- VIF above 10, you can assume that the regression coefficients are poorly estimated due to multicollinearity.
+    Multicollinearity increases the standard errors of the coefficients. Increased standard errors in turn means that coefficients for some independent variables may be found not to be significantly different from 0. In other words, by overinflating the standard errors, multicollinearity makes some variables statistically insignificant when they should be significant. Without multicollinearity (and thus, with lower standard errors), those coefficients might be significant.
 
-		- Dealing with Multicolinearity (VIF near or above 5):
+    Severe multicollinearity is a major problem, because it increases the variance of the regression coefficients, making them unstable. The more variance they have, the more difficult it is to interpret the coefficients.
 
-			- Remove highly correlated predictors from the model. If you have two or more factors with a high VIF, remove one from the model. Because they supply redundant information, removing one of the correlated factors usually doesn't drastically reduce the R-squared. Consider using stepwise regression, best subsets regression, or specialized knowledge of the data set to remove these variables. Select the model that has the highest R-squared value.
+    Warning Signs of Multicollinearity :
 
-			- Use Partial Least Squares Regression (PLS) or Principal Components Analysis, regression methods that cut the number of predictors to a smaller set of uncorrelated components.
+    -   A regression coefficient is not significant even though, theoretically, that variable should be highly correlated with Y.
 
-	- Linear multivariate approaches:
+    -   When you add or delete an X variable, the regression coefficients change dramatically.
 
-		- observation and analysis of more than one statistical outcome variable at a time.
+    -   You see a negative regression coefficient when your response should increase along with X.
 
-		- Multivariate x Multivariable Analysis:
+    -   You see a positive regression coefficient when the response should decrease as X increases.
 
-			Multivariate is used for the analysis with multiple outcomes/dependent variables, whereas multivariable is used for the analysis with multiple explanatory/independent variables. However, they are sometimes used interchangeably in the literature as not many researchers are aware of the difference.
+    -   Your X variables have high pairwise correlations.
 
-			- A simple linear regression model has a continuous outcome and one predictor, whereas a multiple or multivariable linear regression model has a continuous outcome and multiple predictors (continuous or categorical). A simple linear regression model would have the form y = a + xb + e. By contrast, a multivariable or multiple linear regression model would take the form y = a + x1b1 + x2b2 + ... + xkbk + e, where y is a continuous dependent variable, x is a single predictor in the simple regression model, and x1, x2, ..., xk are the predictors in the multivariable model.
+    Ways to measure multicollinearity: Variance Inflation Factor (VIF): assesses how much the variance of an estimated regression coefficient increases if your predictors are correlated:
 
-			- Multivariate, by contrast, refers to the modeling of data that are often derived from longitudinal studies, wherein an outcome is measured for the same individual at multiple time points (repeated measures), or the modeling of nested/clustered data, wherein there are multiple individuals in each cluster. A multivariate linear regression model would have the form
+    -   VIF is equal to 1, there is no multicollinearity among factors
 
-	- Orthogonal transformation:
+    -   VIF is greater than 1, the predictors may be moderately correlated
 
-		An orthogonal transformation is a linear transformation T:V-\>V which preserves a symmetric inner product: preserves lengths of vectors and angles between vectors
+    -   VIF between 5 and 10, indicates high correlation that may be problematic
 
-	- Principal Component Analysis:
+    -   VIF above 10, you can assume that the regression coefficients are poorly estimated due to multicollinearity.
 
-		Definition: Linear transformations of independent varibles of high-dimentional data into lower-dimentionality space, seeking the best directions in the data that account for most of the variability
+    Dealing with Multicolinearity (VIF near or above 5):
 
-		Uses: Mainly used for dimensionality reduction and feature extraction
+    Remove highly correlated predictors from the model. If you have two or more factors with a high VIF, remove one from the model. Because they supply redundant information, removing one of the correlated factors usually doesn't drastically reduce the R-squared. Consider using stepwise regression, best subsets regression, or specialized knowledge of the data set to remove these variables. Select the model that has the highest R-squared value.
 
-		in large datasets.
+    Use Partial Least Squares Regression (PLS) or Principal Components Analysis, regression methods that cut the number of predictors to a smaller set of uncorrelated components.
 
-		Others: PCA transforms and project high-dimensional data in a low-dimensional space, by lineary combining the original independent variables in new orthogonal and independent variables that can best explain/highlight the variance present in the data.
+Multivariate/Multivariable Analysis
 
-	- principal components - artificial variables that are linear combinations of the original variables
+:   (linear) observation and analysis of more than one statistical outcome variable at a time.
 
-	- ill-posed problem:
+    Multivariate is used for the analysis with multiple outcomes/dependent variables, whereas multivariable is used for the analysis with multiple explanatory/independent variables. However, they are sometimes used interchangeably in the literature as not many researchers are aware of the difference.
 
-		- According to Jacques Hadamard, mathematical models of physical phenomena should have the properties that:
+    A simple linear regression model has a continuous outcome and one predictor, whereas a multiple or multivariable linear regression model has a continuous outcome and multiple predictors (continuous or categorical). A simple linear regression model would have the form y = a + xb + e. By contrast, a multivariable or multiple linear regression model would take the form y = a + x1b1 + x2b2 + ... + xkbk + e, where y is a continuous dependent variable, x is a single predictor in the simple regression model, and x1, x2, ..., xk are the predictors in the multivariable model.
 
-			1. a solution existis
+    Multivariate, by contrast, refers to the modeling of data that are often derived from longitudinal studies, wherein an outcome is measured for the same individual at multiple time points (repeated measures), or the modeling of nested/clustered data, wherein there are multiple individuals in each cluster. A multivariate linear regression model would have the form
 
-			2. the solution is unique
+Orthogonal transformation
 
-			3. the solution's behavior changes continuously with the initial conditions
+:   An orthogonal transformation is a linear transformation T:V-\>V which preserves a symmetric inner product: preserves lengths of vectors and angles between vectors
 
-		- If the problem is well-posed, then it stands a good chance of solution on a computer using a stable algorithm. If it is not well-posed, it needs to be re-formulated for numerical treatment. Typically this involves including additional assumptions, such as smoothness of solution. This process is known as regularization.
+Principal Component Analysis
 
-		- Even if a problem is well-posed, it may still be ill-conditioned, meaning that a small error in the initial data can result in much larger errors in the answers. Problems in nonlinear complex systems (so called chaotic systems) provide well-known examples of instability. An ill-conditioned problem is indicated by a large condition number.
+:   Linear transformations of independent varibles of high-dimentional data into lower-dimentionality space, seeking the best directions in the data that account for most of the variability
 
-	- regularization: is the process of adding information in order to solve an ill-posed problem or to prevent overfitting
+    	Uses: Mainly used for dimensionality reduction and feature extraction	in large datasets.
 
-	- overfitting: is the production of an analysis that corresponds too closely or exactly to a particular set of data, and may therefore fail to fit additiona data or predict future observations reliably. An overfitted model is a statistical lmodel that contains more paramenters than can be justified by the data. The essence of overfitting is to have unknowingly extracted some of the residual variation (i.e., the noise) as if that variation represented underlying model structure.
+    	Others: PCA transforms and project high-dimensional data in a low-dimensional space, by lineary combining the original independent variables in new orthogonal and independent variables that can best explain/highlight the variance present in the data.
 
-	- underfitting: occurs when a statistical model cannot adequately capture the underlying structure of the data. An underfitted model is a model where some parameters or terms that would appear in a correctly specified model are missing. Underfitting would occur, e.g., when fitting a linear model to non-linear data, tending to have poor predictive performance.
+principal components 
 
-	- lasso:
+:   artificial variables that are linear combinations of the original variables
 
-		- least absolute shrinkage and selection operator
+ ill-posed problem
 
-		- regression analysis method that performs both variable selection and regularization in order to enhance the prediction accuracy and interpretability of the statistical model it produces.
+:   According to Jacques Hadamard, mathematical models of physical phenomena should have the properties that:
 
-		- Lasso was introduced in order to improve the prediction accuracy and interpretability of regression models by altering the model fitting process to select only a subset of the provided covariates for use in the final model rather than using all of them
+    1.  a solution exists
+    2.  the solution is unique
+    3.  the solution's behavior changes continuously with the initial conditions
 
-		- The LASSO (Least Absolute Shrinkage and Selection Operator) is a regression method that involves penalizing the absolute size of the regression coefficients.
+    If the problem is well-posed, then it stands a good chance of solution on a computer using a stable algorithm. If it is not well-posed, it needs to be re-formulated for numerical treatment. Typically this involves including additional assumptions, such as smoothness of solution. This process is known as regularization.
 
-		- By penalizing (or equivalently constraining the sum of the absolute values of the estimates) you end up in a situation where some of the parameter estimates may be exactly zero. The larger the penalty applied, the further estimates are shrunk towards zero.
+    Even if a problem is well-posed, it may still be ill-conditioned, meaning that a small error in the initial data can result in much larger errors in the answers. Problems in nonlinear complex systems (so called chaotic systems) provide well-known examples of instability. An ill-conditioned problem is indicated by a large condition number.
 
-		- This is convenient when we want some automatic feature/variable selection, or when dealing with highly correlated predictors, where standard regression will usually have regression coefficients that are 'too large'.
+regularization
 
-		- Generalizations of lasso:
+:   is the process of adding information in order to solve an ill-posed problem or to prevent overfitting
 
-			- Elastic net
+overfitting
 
-			- Group lasso
+:   is the production of an analysis that corresponds too closely or exactly to a particular set of data, and may therefore fail to fit additiona data or predict future observations reliably. An overfitted model is a statistical lmodel that contains more paramenters than can be justified by the data. The essence of overfitting is to have unknowingly extracted some of the residual variation (i.e., the noise) as if that variation represented underlying model structure.
 
-			- Fused lasso
+underfitting
 
-			- Quasi-norms and bridge regression
+:   occurs when a statistical model cannot adequately capture the underlying structure of the data. An underfitted model is a model where some parameters or terms that would appear in a correctly specified model are missing. Underfitting would occur, e.g., when fitting a linear model to non-linear data, tending to have poor predictive performance.
 
-			- Adaptive lasso
+LASSO
 
-	- Independent Component Analysis (ICA)
+:   *Least Absolute Shrinkage and Selection Operator.* Regression analysis method that performs both variable selection and regularization in o\\\`\\\`rder to enhance the prediction accuracy and interpretability of the statistical model it produces. Lasso was introduced in order to improve the prediction accuracy and interpretability of regression models by altering the model fitting process to select only a subset of the provided covariates for use in the final model rather than using all of them
 
-		- is a statistical and computational technique for revealing hidden factors that underlie sets of random variables, measurements, or signals.
+    Is a regression method that involves penalizing the absolute size of the regression coefficients. By penalizing (or equivalently constraining the sum of the absolute values of the estimates) you end up in a situation where some of the parameter estimates may be exactly zero. The larger the penalty applied, the further estimates are shrunk towards zero. This is convenient when we want some automatic feature/variable selection, or when dealing with highly correlated predictors, where standard regression will usually have regression coefficients that are 'too large'.
 
-		- In the model, the data variables are assumed to be linear or nonlinear mixtures of some unknown latent variables, and the mixing system is also unknown. The latent variables are assumed nongaussian and mutually independent, and they are called the independent components of the observed data. These independent components, also called sources or factors, can be found by ICA.
+    Generalizations of lasso:
 
-	- Factor Analysis
+    -   Elastic net
 
-		- <https://www.theanalysisfactor.com/factor-analysis-1-introduction/>
+    -   Group lasso
 
-		- Factor analysis is a statistical method used to describe variability among observed, correlated variables in terms of a potentially lower number of unobserved variables called factors.
+    -   Fused lasso
 
-		- Factor analysis is a useful tool for investigating variable relationships for complex concepts such as socioeconomic status, dietary patterns, or psychological scales.
+    -   Quasi-norms and bridge regression
 
-		- It allows researchers to investigate concepts that are not easily measured directly by collapsing a large number of variables into a few interpretable underlying factors.
+    -   Adaptive lasso
 
-		- The key concept of factor analysis is that multiple observed variables have similar patterns of responses because they are all associated with a latent (i.e. not directly measured) variable.
+Factor Analysis
 
-		- In every factor analysis, there are the same number of factors as there are variables. Each factor captures a certain amount of the overall variance in the observed variables, and the factors are always listed in order of how much variation they explain.
+:   [Factor Analysis](https://www.theanalysisfactor.com/factor-analysis-1-introduction/) is a statistical method used to describe variability among observed, correlated variables in terms of a potentially lower number of unobserved variables called factors. Is a useful tool for investigating variable relationships for complex concepts such as socioeconomic status, dietary patterns, or psychological scales. Allows researchers to investigate concepts that are not easily measured directly by collapsing a large number of variables into a few interpretable underlying factors.
 
-		- The eigenvalue is a measure of how much of the variance of the observed variables a factor explains. Any factor with an eigenvalue ≥1 explains more variance than a single observed variable.
+    The key concept of factor analysis is that multiple observed variables have similar patterns of responses because they are all associated with a latent (i.e. not directly measured) variable. In every factor analysis, there are the same number of factors as there are variables. Each factor captures a certain amount of the overall variance in the observed variables, and the factors are always listed in order of how much variation they explain.
 
-		- The relationship of each variable to the underlying factor is expressed by the so-called factor loading.
-
-		- Since factor loadings can be interpreted like standardized regression coefficients, one could also say that the variable income has a correlation of 0.65 with Factor 1. This would be considered a strong association for a factor analysis in most research fields.
-
-	- Partial Least Squares regression (PLS regression)
-
-		Partial least squares (PLS) regression is a technique that reduces the predictors to a smaller set of uncorrelated components and performs least squares regression on these components, instead of on the original data. PLS regression is especially useful when your predictors are highly collinear, or when you have more predictors than observations and ordinary least-squares regression either produces coefficients with high standard errors or fails completely. PLS does not assume that the predictors are fixed, unlike multiple regression. This means that the predictors can be measured with error, making PLS more robust to measurement uncertainty.
-
-	- Discriminant Analysis: i.g., the prediction of group membership from the levels of continuous predictor variables
-
-	- bipartite graphs:	also called a bigraph, is a set of graph vertices decomposed into two disjoint sets such that no two graph vertices within the same set are adjacent.
+    The eigenvalue is a measure of how much of the variance of the observed variables a factor explains. Any factor with an eigenvalue ≥1 explains more variance than a single observed variable. The relationship of each variable to the underlying factor is expressed by the so-called factor loading. Since factor loadings can be interpreted like standardized regression coefficients, one could also say that the variable income has a correlation of 0.65 with Factor 1. This would be considered a strong association for a factor analysis in most research fields.

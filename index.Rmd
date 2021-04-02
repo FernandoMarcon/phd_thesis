@@ -10,6 +10,22 @@ link-citations: yes
 description: "Computational Systems Biology for pneumonia vaccine development using human challenge models"
 ---
 
-# Preface {-}
+# Preface {.unnumbered}
 
-Put abstract here!
+Provisory abstract (from Dessi's Abstract Submission Characterizing the Immune Response to Experimental Pneumococcal Carriage in Older Adults)
+
+**Background**
+
+Pneumococcal colonization is infrequently detected in older adults (\>65yrs), however pneumococcal infection accounts for over 70% of community acquired pneumonia(CAP) cases. Our aim was to characterize the immune response to pneumococcal challenge in older adults and evaluate the protective effect of prior colonization upon rechallenge with an autologous strain.
+
+**Methods**
+
+For the first time, adults aged 50-84 were inoculated with pneumococcus serotype 6B(SPN6B). SPN6B in nasal wash was quantified by bacterial culture. Mucosal samples (curettes & nasal lining fluid) were used to phenotype immune cells, quantify gene expression and cytokines. Anti-protein and anti-capsular IgG were measured in serum using multiplex electrochemiluminescence and ELISA, respectively.
+
+**Results**
+
+Carriage rates were not different in 50-80 year-olds(39%, n=64), compared to 18-50 year-olds(46.7%, n=225), but were lower in adults over 70(24.1%). Prior carriage did not protect against acquisition at rechallenge but decreased the density and duration of colonization. Carriage boosted anti-protein IgG but not anti-capsule IgG, however neither correlated with protection. Instead we found lower levels of IP-10 and MIG, and higher levels of CD4 T cells, epithelial HLA-DR expression, and monocyte CD14 expression associate with protection.
+
+**Conclusions**
+
+The nasal immune responses to pneumococcus changes with age and may explain why older adults are more susceptible to CAP.

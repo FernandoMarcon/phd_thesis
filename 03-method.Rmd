@@ -1,5 +1,9 @@
 # Methods
 
+DATA COLLECTED: • Nasal cytokines (Dessi) • Nasal cell flow (Simon & Jesus) • Nasal cell RNAseq (Fernando & Dessi) • Anti-CPS Baseline and D29 (Hugh) • MSD Baseline and D29 • T cell ICS data ? Need to track down original data
+
+EXPERIMENTS REMAINING: • Nasal Wash MPO -- neutrophil function • Re-challenge cohort - Anti-CPS Baseline and D29 and rechallenge • Serum OPK assays  6B(in-house) vs more serotypes(Goldblatt) • B cell phenotyping -- for senescence and memory B cell populations Same as for SPN3 with a few more markers • B cell ELISPOT  same protocol as SPN3
+
 ## Overall Experimental Design, Data and Analysis
 
 ### Experimental Designs and Data Measurements
@@ -44,130 +48,112 @@ In the case of RNA-Seq data, co-expression analysis were performed using the CE
 
 The same basic idea was also applied to the other types of data in order to identify possible relationship patterns among the biological variables. For example, identifying sets of cytokines (Luminex) or immune cell types (flow cytometry) that are highly correlated between each other, either across time-points or groups (e.g. Spn groups, vaccine type, etc.). This sets of highly correlated variables were determined through the calculation of pairwise correlations (Spearman, Rho) for all variables in each dataset. These pairwise correlations are represented in the form of a correlation matrix, with the number of rows and columns equal to the total number of variables present in the dataset. To define if two variables are connected or not, discrete values of 0s and 1s were used to represent if a connection exists, respectively. Values of 1 were assigned if their absolute correlation values were \|Rho\| \>= 0.7, 0 otherwise. This discrete matrix, also known as an adjacency matrix, was used to create a graph, where the nodes represent biological variables (e.g. cytokines, cell type) and can be connected (edges) only if its adjacency value is equal to 1. Finally, variables were grouped into modules through the Louvain (Newman, 2006; Traag, Waltman, & van Eck, 2019)⁠ clustering method, a commonly used community detection algorithm and available in igraph (Csárdi & Nepusz, n.d.)⁠ package.
 
-## TRANSCRIPTOMICS PIPELINE
+## Transcriptomics Analysis Pipeline
 
-	QUALITY CONTROL
+### Quality Control
 
-		- Density plot
+-   Density plot
 
-		- Clustering
+-   Clustering
 
-		- MA plot
+-   MA plot
 
-			microarray - affycoretools::maplot() - <https://rdrr.io/bioc/t/man/maplot.html>
+    -   microarray - affycoretools::maplot() - <https://rdrr.io/bioc/t/man/maplot.html>
 
-			rnaseq	- DESeq2::plotMA(dds)
+    -   rnaseq  - DESeq2::plotMA(dds)
 
-		- Distribution (Normality) test
+-   Distribution (Normality) test
 
-		- PVCA
+-   PVCA
 
-		- MDP
+-   MDP
 
-		- RLE
+-   RLE
 
-		- Multidimensional scaling (MDS)
+-   Multidimensional scaling (MDS)
 
-		- Bi-clustering
+-   Bi-clustering
 
-		- PCA
+-   PCA
 
-		- IPVCA
+-   IPVCA
 
-		- other mixOmics
+-   mixOmics
 
-Biomarkers
+### Biomarkers
 
-	DEG Analysis
+-   DEG Analysis
 
-		Microarray
+    -   Microarray
 
-			- distribution assumptions evaluation
+        -   distribution assumptions evaluation
 
-			DE anlysis:
+-   RNA-Seq
 
-				- limma
+    -   DESeq2
 
-				- t-test
+    -   edgeR
 
-				- ANOVA
+    -   limma
 
-				- ranking methods
+-   DE analysis:
 
-				- see other methods and approaches
+    -   limma
 
-				- ...
+    -   t-test
 
-			- p-value distribution analysis
+    -   ANOVA
 
-			- pathway stabilization for DEGs thresholding
+    -   ranking methods
 
-		RNA-Seq
+        -   see other methods and approaches
 
-			- DESeq2
+    -   *p-value* distribution analysis
 
-			- edgeR
+    -   pathway stabilization for DEGs thresholding
 
-			- limma
+-   Bi-clustering
 
-	Bi-clustering
+    -   <https://rpubs.com/crazyhottommy/PCA_MDS>
 
-		<https://rpubs.com/crazyhottommy/PCA_MDS>
+### Pathway Analysis
 
-Pathway Analysis
+-   ORA
 
-	- ORA
+    -   Network Analyst
 
-		- Network Analyst
+    -   Enrichr
 
-		- Enrichr
+    -   StringR
 
-		- StringR
+-   GSEA
 
-	- GSEA
+-   IPA
 
-	- IPA
+### Pipeline
 
-	- ...
+INPUT: - Raw expression data - RNA-Seq: counts - Microarray: .CEL, raw expression table (Illumina) - phenodata
 
-Co-expression Analysis
+    Parameters:
+        - split_proportion = c(#train, #test, #validation)
+        - response_var = ""
+        - preliminary_filter = c(T,F)
 
-	- WGCNA
+OUTPUT: - biomarkers list - my performance assessment - plots
 
-	- CemiTool
+ALGORITHM - Read data - test tables equivalence - split data in train, test and validation sets - (Optional) preliminary filter (e.g, low variance, low mean) - Biomarker detecion - Biomarkers: biomarker list extraction - Biomarkers performance test in train/test dataset - Biomarkers performance test in validation dataset - plots
 
-	- ARACNE
+### 
 
-	- ...
+## Network Analysis
 
-Network Analysis
+### Co-expression Analysis
+
+-   WGCNA / CEMiTool
+
+```{=html}
+<!-- -->
+```
+-   ARACNE
+
 - Topological analysis
-
-## BIOMARKER PIPE
-
-INPUT:
-	- Raw expression data
-		- RNA-Seq: counts
-		- Microarray: .CEL, raw expression table (Illumina)
-	- phenodata
-
-	Parameters:
-		- split_proportion = c(#train, #test, #validation)
-		- response_var = ""
-		- preliminary_filter = c(T,F)
-
-OUTPUT:
-	- biomarkers list
-	- my performance assessment
-	- plots
-
-ALGORITHM
-	- Read data
-	- test tables equivalence
-	- split data in train, test and validation sets
-	- (Optional) preliminary filter (e.g, low variance, low mean)
-	- Biomarker detecion
-	- Biomarkers: biomarker list extraction
-	- Biomarkers performance test in train/test dataset
-	- Biomarkers performance test in validation dataset
-	- plots

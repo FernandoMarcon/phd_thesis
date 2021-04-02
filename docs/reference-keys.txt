@@ -7,7 +7,15 @@ the-effects-of-sex-and-ageing-on-human-immunity
 the-experimental-human-pneumococcal-carriage-model
 systems-vaccinology
 research-questions-and-goals
-research-questions
+does-inflammation-in-the-nose-change-with-sex
+does-inflammation-in-the-nose-change-with-age
+can-baseline-values-of-inflammation-in-the-nose-predict-who-will-become-colonized-in-the-future
+do-any-of-the-cytokines-of-immune-cell-readouts-from-flow-data-correlate-with-spn-density
+do-any-of-the-cytokines-correlate-with-flow-cytometry-data
+does-the-induction-of-cytokines-differ-after-spn-inoculation-with-sex
+does-the-induction-of-cytokines-differ-after-spn-inoculation-with-age
+is-the-response-different-in-natural-carriers
+specific-questions
 pneumococcal-carriage-load-spn-density
 gene-expression-rna-seq
 at-baseline
@@ -17,6 +25,9 @@ at-baseline-1
 dayx-vs-baseline-1
 hormone-levels
 cell-recruitment-flow-cytometry
+technical-questions
+sex-effect-on-spn-carriage
+ageing-effect-on-spn-carriage
 objectives
 methods
 overall-experimental-design-data-and-analysis
@@ -27,8 +38,14 @@ proposed-solution
 overall-data-analysis
 identification-of-perturbed-features
 identification-of-transcriptional-programs-and-variables-cluster-with-similar-patterns
-transcriptomics-pipeline
-biomarker-pipe
+transcriptomics-analysis-pipeline
+quality-control
+biomarkers
+pathway-analysis
+pipeline
+section
+network-analysis
+co-expression-analysis
 applications
 example-one
 example-two
@@ -54,7 +71,7 @@ bioinformatics
 bioinformatics-essentials
 differential-expression-analysis
 empirical-assessment-of-analysis-workflows-for-differential-expression-analysis-of-human-samples-using-rna-seq
-network-analysis
+network-analysis-1
 genemania-a-real-time-multiple-association-network-integration-algorithm-for-predicting-gene-function
 the-genemania-prediction-server-biological-network-integration-for-gene-prioritization-and-predicting-gene-function
 multidimensional-scaling
@@ -120,3 +137,4 @@ statistics-probability
 statistics
 statistical-tests
 probability
+virology
