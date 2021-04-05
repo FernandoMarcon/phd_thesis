@@ -1,14 +1,36 @@
 # Methods
 
-DATA COLLECTED: • Nasal cytokines (Dessi) • Nasal cell flow (Simon & Jesus) • Nasal cell RNAseq (Fernando & Dessi) • Anti-CPS Baseline and D29 (Hugh) • MSD Baseline and D29 • T cell ICS data ? Need to track down original data
+DATA COLLECTED:
 
-EXPERIMENTS REMAINING: • Nasal Wash MPO -- neutrophil function • Re-challenge cohort - Anti-CPS Baseline and D29 and rechallenge • Serum OPK assays  6B(in-house) vs more serotypes(Goldblatt) • B cell phenotyping -- for senescence and memory B cell populations Same as for SPN3 with a few more markers • B cell ELISPOT  same protocol as SPN3
+-   Nasal cytokines (Dessi)
+
+-   Nasal cell flow (Simon & Jesus)
+
+-   Nasal cell RNAseq (Fernando & Dessi)
+
+-   Anti-CPS Baseline and D29 (Hugh)
+
+-   MSD Baseline and D29
+
+-   T cell ICS data ? Need to track down original data
+
+EXPERIMENTS REMAINING:
+
+-   Nasal Wash MPO -- neutrophil function
+
+-   Re-challenge cohort - Anti-CPS Baseline and D29 and rechallenge
+
+-   Serum OPK assays  6B(in-house) vs more serotypes (Goldblatt)
+
+-   B cell phenotyping -- for senescence and memory B cell populations Same as for SPN3 with a few more markers
+
+-   B cell ELISPOT  same protocol as SPN3
 
 ## Overall Experimental Design, Data and Analysis
 
 ### Experimental Designs and Data Measurements
 
-To describe and identify the immunological mechanisms involved in the development of pneumococcal carriage this project will analyze data from different cohorts of the EHPC consortium. The datasets selected comprise of 5 different cohorts, each with an experimental design allow to identify and describe the main components involved in the response to Spn infection, development of pneumococcal carriage, its interactions with flu vaccines (TIV and LAIV), as well evaluate how these immunological responses behave between sex and age groups. Different experiments probe a specific level of the human nasal mucosa system such as gene expression, protein production and cytokine signalling, immune cell recruitment, Spn colonization and microbiota composition.
+To describe and identify the immunological mechanisms involved in the development of Spn carriage this project will analyze data from different cohorts of the EHPC consortium. The datasets selected comprise of 5 different cohorts, each with an experimental design allow to identify and describe the main components involved in the response to Spn infection, development of Spn carriage, its interactions with flu vaccines (TIV and LAIV), as well evaluate how these immunological responses behave between sex and age groups. Different experiments probe a specific level of the human nasal mucosa system such as gene expression, protein production and cytokine signalling, immune cell recruitment, Spn colonization and microbiota composition.
 
 So far, 3 cohorts are fully completed: PILOT, LAIV1 and LAIV2. They are all constituted of healthy adult volunteers, with age ranging from 17 to 48 years old. The first cohort (PILOT) was designed to evaluate the immunological factors involved in the response to Spn infection, containing a relatively small set of 20 volunteers, when compared to other studies. The LAIV1 cohort, performed during the winter of 2015/2016, was developed to evaluate how influenza vaccines, such as trivalent inactivated (TIV) and live attenuated influenza (LAIV) vaccines, affects the development of carriage of 129 volunteers after being inoculated with Spn. The opposite biological question was asked in the following LAIV2 study, in which response to flu vaccines was evaluated regarding prior exposure to Spn. This cohort was performed in the winter of 2016/2017 with a total of 198 volunteers. The remaining two ongoing cohorts have also the same designs but probing the elderly population instead. The first study, namely Elderly, 82 volunteers from both genders and within 50 and 81 years old were inoculated with Spn and samples were collected at baseline and after inoculation, similarly to PILOT study. The last cohort, still in the development stage, will add the interaction with influenza vaccines to the previous design.
 
@@ -38,7 +60,7 @@ To identify which biological pathways could potentially be perturbed in each com
 
 To first answer the most basic question, "which biological variable(s) are possibly related to Spn inoculation?", features that suffered any perturbation were detected through statistical methods which compare their sample distribution after the inoculation to its baseline levels. In RNA-Seq data, this analysis is performed with both DESeq2 and edgeR (Robinson, McCarthy, & Smyth, 2009)⁠ R packages and it is known as differential expression analysis (DEA). This perturbation is represented by the ratio of distribution means and displayed as log2 fold-change (log2FC) values. Statistical confidence is also estimated, represented by the p-values (pval), and further adjusted (padj) for multiple comparisons. Deferentially expressed genes (DEG) can be selected by setting thresholds for both log2FCs and p-values, and classified in up-, down-regulated or unperturbed according to its log2FCs direction. In this study DEGs were defined according to the following thresholds: among the genes with padj \< 0.01 the ones with log2FC \> 0 are classified as UP, log2FC \< 0 classified as DOWN and the remaining as UNCHANGED.
 
-Similar statistical tests were applied to the remaining data types using R core functions. These tests can be parametric (e.g. T-Test) or not (e.g. Mann-Whitney-Wilcoxon (MWW test) and are applied accordingly if most of the variables in a given dataset follow a normal distribution or not, respectively. P-values obtained from these tests were corrected for multiple comparisons with Bonferroni method (Armstrong, 2014)⁠ and variables with padj below a threshold of 0.01 were selected for further analysis.
+Similar statistical tests were applied to the remaining data types using R core functions. These tests can be parametric (e.g. T-Test) or not (e.g. Mann-Whitney-Wilcoxon (MWW test) and are applied accordingly if most of the variables in a given dataset follow a normal distribution or not, respectively. P-values obtained from these tests were corrected for multiple comparisons with Bonferroni method (Armstrong, 2014)⁠ and variables with *padj* below a threshold of 0.01 were selected for further analysis.
 
 #### Identification of Transcriptional Programs and Variables Cluster with Similar Patterns
 
@@ -60,7 +82,7 @@ The same basic idea was also applied to the other types of data in order to iden
 
     -   microarray - affycoretools::maplot() - <https://rdrr.io/bioc/t/man/maplot.html>
 
-    -   rnaseq  - DESeq2::plotMA(dds)
+    -   rnaseq - DESeq2::plotMA(dds)
 
 -   Distribution (Normality) test
 
@@ -151,9 +173,8 @@ ALGORITHM - Read data - test tables equivalence - split data in train, test and 
 
 -   WGCNA / CEMiTool
 
-```{=html}
 <!-- -->
-```
+
 -   ARACNE
 
-- Topological analysis
+-   Topological analysis

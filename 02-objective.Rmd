@@ -1,70 +1,60 @@
-# Research Questions and Goals
+# Goals and Questions
 
-## Does inflammation in the nose change with sex?
+## Goals
 
-## Does inflammation in the nose change with age?
+### Main Goal
+
+The goal of this project is to provide a systemic description of the interplay between sex differences and ageing in human pneumococcal carriage, as well how these and other factors affect the susceptibility to pneumococcal diseases.
+
+### Specific Goals
+
+## Research Questions
+
+### Does inflammation in the nose change with sex?
+
+### Does inflammation in the nose change with age?
 
 -   Compare baseline values between elderly(AGES) and young (LAIV2)
 
-    -   Control/test for effect of sex &rarr; this is something I think we'll have to control for in most of our tests
+    -   Control/test for effect of sex → this is something I think we'll have to control for in most of our tests
 
     -   Linear regression with Age as continuous variable
 
         -   *It may be that we need to try this analysis in the AGES group alone...we don't have great sampling of middle aged adults in either cohort which may bias the analysis?*
 
-## Can baseline values of inflammation in the nose predict who will become colonized in the future?
+### Can baseline values of inflammation in the nose predict who will become colonized in the future?
 
 -   AGES study we have Days 0,2,7,9
 
-    -   *Right now they determine carriage positive as at least one day with carriage +ve* 			
+    -   *Right now they determine carriage positive as at least one day with carriage +ve*
 
-        -   *I wonder if there is a way to look at patterns for people who carry for more than one day, etc* 		
+        -   *I wonder if there is a way to look at patterns for people who carry for more than one day, etc*
 
     -   We can find other data sets in the lab to test this with?
 
-## Do any of	the cytokines of immune cell readouts (from Flow data) correlate with Spn density?
+### Do any of the cytokines of immune cell readouts (from Flow data) correlate with Spn density?
 
-## Do any of the cytokines correlate with flow cytometry data?
+### Do any of the cytokines correlate with flow cytometry data?
 
-Primarily numbers of:
+Primarily numbers of granulocytes, monocytes, lymphocytes, B cells, T cells, CD4 T cells, CD8 T cells and MAIT?
 
--   Granulocytes
+### Does the induction of cytokines differ after Spn inoculation with sex?
 
--   Monocytes
-
--   Lymphocytes
-
--   B cells
-
--   T cells
-
--   CD4 T cells
-
--   CD8 T cells
-
--   MAIT
-
-## Does the induction of cytokines differ after Spn inoculation with sex?
-
-## Does the induction of cytokines differ after Spn inoculation with age?
+### Does the induction of cytokines differ after Spn inoculation with age?
 
 -   Using Day 0 to Day 2 changes (log2(FC))
 
     -   *I wanted to recreate Fig1b from the Nature Immunology paper and was wondering if you could help me by even just sending me the code and I can have a go at it?*
 
-## Is the response different in natural carriers? 
+### Is the response different in natural carriers?
 
 -   I don't think we're powered enough to do this as we only have 4 natural carriers in AGES and 1 natural carrier in LAIV2
 
-```{=html}
-<!-- -->
-```
 -   In the Rechallenge group
 
     -   16 people from AGES were rechallenged 36 months later and Days 0,2,7 were collected
 
         -   An "R" was just added to the end of the sample ID
-            			
 
     -   There are 4 people that are carriage positive in the rechallenge
 
@@ -166,29 +156,3 @@ Primarily numbers of:
         -   How does the serum antibody response (anti-CPS and anti-protein) change depending on Carriage, Sex and Age?
 
         -   Does the opsonophagocytic function of antibodies change with age?
-
-## Objectives
-
-The goal of this study is to evaluate how sex and ageing might affect the immune responses to Spn carriage development and its control, to understand intrinsic factors that may give protection for some carriers but increase susceptibility to diseases in others. More specifically,
-
-This will be done by identifying the components and describing their relationships of different layers of human biology during the response to Spn, and further modelling the complexity of the overall response by integrating each level. At first, a single-omics approach will be used to upon each cohort and data type to:
-
--   profile the overall immune response of adults to Spn infection
-
--   profile the overall immune response of adults to Spn infection, stratified by sex
-
--   Identify sex-specific components and/or behaviors in immune response profiles
-
--   profile the overall immune response of elderlies to Spn infection
-
--   Identify age-specific components and/or behaviors in immune response profiles among elderlies and adults
-
--   profile the overall immune response of elderlies to Spn infection, stratified by sex
-
--   Identify sex-specific components and/or behaviors in immune response profiles among elderlies
-
--   Identify age-specific components and/or behaviors in immune response profiles among elderlies and adults of same-sex
-
--   Select the main components affected by sex and age to Spn infection
-
-With the main components selected, different layers of the nasal mucosa will be integrated with multi-omics approaches to describe the main components and its interactions related to sex and ageing factors during Spn infection, carriage development and influenza vaccine interactions.

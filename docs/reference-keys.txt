@@ -6,7 +6,11 @@ human-protection-to-pneumococcal-diseases
 the-effects-of-sex-and-ageing-on-human-immunity
 the-experimental-human-pneumococcal-carriage-model
 systems-vaccinology
-research-questions-and-goals
+goals-and-questions
+goals
+main-goal
+specific-goals
+research-questions
 does-inflammation-in-the-nose-change-with-sex
 does-inflammation-in-the-nose-change-with-age
 can-baseline-values-of-inflammation-in-the-nose-predict-who-will-become-colonized-in-the-future
@@ -28,7 +32,6 @@ cell-recruitment-flow-cytometry
 technical-questions
 sex-effect-on-spn-carriage
 ageing-effect-on-spn-carriage
-objectives
 methods
 overall-experimental-design-data-and-analysis
 experimental-designs-and-data-measurements
