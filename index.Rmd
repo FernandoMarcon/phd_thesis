@@ -1,7 +1,8 @@
 ---
-title: "Sex and Ageing Effects on Pneumococcal Carriage"
+title: "Ageing and Sex Differences in Human Pneumococcal Carriage"
+subtitle: "minimal version"
 author: "Fernando Marcon Passos"
-date: "`r Sys.Date()`"
+date: "March 2021"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -10,22 +11,16 @@ link-citations: yes
 description: "Computational Systems Biology for pneumonia vaccine development using human challenge models"
 ---
 
-# Preface {.unnumbered}
+> Infectious disease is one of the few genuine adventures left in the world. The dragons are all dead and the lance grows rusty in the chimney corner....About the only sporting proposition that remains unimpaired by the relentless domestication of a once free living human species is the war against those ferocious little fellow creatures, which lurk in the dark corners and stalk us in the bodies of rats, mice, and all kinds of domestic animals, which fly and crawl with the insects and waylay us in our food and drink and even in our love. *Hans Zinsser, 1935*
 
-Provisory abstract (from Dessi's Abstract Submission Characterizing the Immune Response to Experimental Pneumococcal Carriage in Older Adults)
+**Goal**
 
-**Background**
+The goal of this study is to evaluate how sex and ageing might affect the immune responses to Spn carriage development and its control, to understand intrinsic factors that may give protection for some carriers but increase susceptibility to diseases in others.
 
-Pneumococcal colonization is infrequently detected in older adults (\>65yrs), however pneumococcal infection accounts for over 70% of community acquired pneumonia(CAP) cases. Our aim was to characterize the immune response to pneumococcal challenge in older adults and evaluate the protective effect of prior colonization upon rechallenge with an autologous strain.
+**Outline**
 
-**Methods**
+1.  Role of Sex in Immune Responses to Pneumococcal Carriage
 
-For the first time, adults aged 50-84 were inoculated with pneumococcus serotype 6B(SPN6B). SPN6B in nasal wash was quantified by bacterial culture. Mucosal samples (curettes & nasal lining fluid) were used to phenotype immune cells, quantify gene expression and cytokines. Anti-protein and anti-capsular IgG were measured in serum using multiplex electrochemiluminescence and ELISA, respectively.
+2.  Role of Ageing in Immune Responses to Pneumococcal Carriage
 
-**Results**
-
-Carriage rates were not different in 50-80 year-olds(39%, n=64), compared to 18-50 year-olds(46.7%, n=225), but were lower in adults over 70(24.1%). Prior carriage did not protect against acquisition at rechallenge but decreased the density and duration of colonization. Carriage boosted anti-protein IgG but not anti-capsule IgG, however neither correlated with protection. Instead we found lower levels of IP-10 and MIG, and higher levels of CD4 T cells, epithelial HLA-DR expression, and monocyte CD14 expression associate with protection.
-
-**Conclusions**
-
-The nasal immune responses to pneumococcus changes with age and may explain why older adults are more susceptible to CAP.
+3.  Role of Sex and Ageing in the Immunity to Pneumococcal Carriage

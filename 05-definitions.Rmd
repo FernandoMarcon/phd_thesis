@@ -6,7 +6,7 @@ cross-over design
 
 w\. r. t
 
-:   with respect to, with regard to	
+:   with respect to, with regard to
 
 Dependent/outcome variable
 
@@ -40,9 +40,9 @@ bipartite graphs
 
 Discriminant Analysis
 
-:    i.g., the prediction of group membership from the levels of continuous predictor variables
+:   i.g., the prediction of group membership from the levels of continuous predictor variables
 
-Partial Least Squares  (PLS) regression
+Partial Least Squares (PLS) regression
 
 :   Partial least squares (PLS) regression is a technique that reduces the predictors to a smaller set of uncorrelated components and performs least squares regression on these components, instead of on the original data. PLS regression is especially useful when your predictors are highly collinear, or when you have more predictors than observations and ordinary least-squares regression either produces coefficients with high standard errors or fails completely. PLS does not assume that the predictors are fixed, unlike multiple regression. This means that the predictors can be measured with error, making PLS more robust to measurement uncertainty.
 
@@ -102,15 +102,15 @@ Principal Component Analysis
 
 :   Linear transformations of independent varibles of high-dimentional data into lower-dimentionality space, seeking the best directions in the data that account for most of the variability
 
-    	Uses: Mainly used for dimensionality reduction and feature extraction	in large datasets.
+        Uses: Mainly used for dimensionality reduction and feature extraction   in large datasets.
 
-    	Others: PCA transforms and project high-dimensional data in a low-dimensional space, by lineary combining the original independent variables in new orthogonal and independent variables that can best explain/highlight the variance present in the data.
+        Others: PCA transforms and project high-dimensional data in a low-dimensional space, by lineary combining the original independent variables in new orthogonal and independent variables that can best explain/highlight the variance present in the data.
 
-principal components 
+principal components
 
 :   artificial variables that are linear combinations of the original variables
 
- ill-posed problem
+ill-posed problem
 
 :   According to Jacques Hadamard, mathematical models of physical phenomena should have the properties that:
 

@@ -1,0 +1,47 @@
+# Project Plan
+
+1.  profile the overall immune response of adults to Spn infection;
+
+    -   *Data types:* RNA-Seq, Luminex, Spn density, Flow cytometry
+
+    -   *Data sets:* Pilot, LAIV2; baseline and after Spn inoculation
+
+2.  profile the overall immune response of adults to Spn infection, stratified by sex;
+
+    1.  Identify sex-specific components and/or behaviours in immune response profiles
+
+3.  profile the overall immune response of elderlies to Spn infection
+
+    1.  Identify age-specific components and/or behaviours in immune response profiles among elderlies and adults
+
+    2.  profile the overall immune response of elderlies to Spn infection, stratified by sex;
+
+    3.  Identify sex-specific components and/or behaviours in immune response profiles among elderlies
+
+    4.  Identify age-specific components and/or behaviours in immune response profiles among elderlies and adults of same-sex
+
+    -   *Data types:* RNA-Seq, Luminex, Spn density, Flow cytometry
+
+    -   *Data sets:* AGES; all timepoints
+
+4.  Integrate different cohorts and data types by the main components affected by sex and age to Spn infection
+
+    -   *Data types:* RNA-Seq, Luminex, Spn density, Flow cytometry, hormone levels
+
+    -   *Data sets:* Pilot, LAIV1, LAIV2, AGES; baseline and after Spn inoculation
+
+For items 1 to 3, the major analysis to be performed consists in:
+
+-   *Preprocessing:* Raw data will be preprocessed accordingly to its standard pipelines, transformed in log2 values and/or normalized.
+
+-   *Quality Control and Exploratory Data Analysis:* Quality control, outlier detection and evaluation of overall data variability will be performed using standard dimensionality reduction techniques, clusterization methods and further displayed using several plot types. Variables/samples with more than 25% of missing values will be removed and the remaining missing data will be imputed using unsupervised algorithms.
+
+-   *Detection of perturbed features:* use of statistical tests to select features with statistically significant increase/decrease of overall levels after Spn inoculation when compared to its baseline values
+
+-   *Detection of co-regulated features:* construct network of features based on their overall levels similarity and detect cluster of highly correlated features. Their behavior will be assessed by estimating the average cluster levels and compared between groups by time-points.
+
+-   *Pathway Analysis:* gene lists from both previous analysis of RNA-Seq data will be enriched for Reactome pathways to infer underlying biological mechanisms involved in each comparison.
+
+-   *Component Selection:* For each cohort and data type, major components interrelated to either immune response to Spn inoculation, sex or ageing will be selected for final integration analysis.
+
+The last item will be performed using different data integration frameworks on previous selected components, such as mixOmics, SIMON and MOFA.

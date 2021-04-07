@@ -38,6 +38,8 @@ Different types of experiments were performed in all cohorts, measuring multiple
 
 ### Overall Data Types and Preprocessing
 
+![](images/paste-13C4D4A9.png)
+
 Only data without any preprocessing or transformation were used, for all cohorts and data types, except for data retrieved from public databases when additional information was required in a given step of the analysis (e.g., GMT files from Reactome database for pathway analysis).
 
 Raw data from RNA-Seq experiments consists of fastq files and were preprocessed with a benchmark pipeline: samples were aligned using the STAR (Dobin et al., 2013)⁠ software, transcripts counts calculated with featureCounts (Liao, Smyth, & Shi, 2014)⁠ software and, with personalized scripts in bash and R language, samples of a given cohort were merge in a single table, where each row represent a transcript and each column a sample. Both STAR and featureCounts steps were supplied with the Hg38 reference (Herrero et al., 2016; Ruffier et al., 2017)⁠⁠ genome and features, represented by Ensembl identifiers (EnsemblID, Aken et al., 2016), were parsed so that the EnsemblID\`s version is omitted. Quality control checks were performed between each step of the preprocessing procedure, with fastQC (A. & Bittencourt a, 2010)⁠ on fastq files before alignment and MultiQC (Ewels, Magnusson, Lundin, & Käller, 2016)⁠ for all steps with no samples removed due to low quality. Counts data were normalized either with trimmed means of M-values (TMM, Smid et al., 2018)⁠ or variance stabilizing transformation (vst) (Zwiener, Frisch, & Binder, 2014)⁠with the DESeq2 (Love, Huber, & Anders, 2014)⁠ package from Bioconductor (Ihaka & Gentleman, 1996)⁠⁠, when necessary.
