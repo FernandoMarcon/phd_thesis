@@ -1,0 +1,20 @@
+#  {-}
+
+> Infectious disease is one of the few genuine adventures left in the world. The dragons are all dead and the lance grows rusty in the chimney corner....About the only sporting proposition that remains unimpaired by the relentless domestication of a once free living human species is the war against those ferocious little fellow creatures, which lurk in the dark corners and stalk us in the bodies of rats, mice, and all kinds of domestic animals, which fly and crawl with the insects and waylay us in our food and drink and even in our love. *Hans Zinsser, 1935*
+  
+  
+  
+**Goal**
+
+The goal of this study is to evaluate how sex and ageing might affect the immune responses to Spn carriage development and its control, to understand intrinsic factors that may give protection for some carriers but increase susceptibility to diseases in others.  
+  
+  
+  
+
+**Outline**
+
+1.  Role of Sex in Immune Responses to Pneumococcal Carriage
+
+2.  Role of Ageing in Immune Responses to Pneumococcal Carriage
+
+3.  Role of Sex and Ageing in the Immunity to Pneumococcal Carriage
