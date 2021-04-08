@@ -1,0 +1,47 @@
+# (APPENDIX) Appendix {-}
+
+# Essential Literature
+
+## Thesis
+
+-   Adler's PhD Thesis &rarr; Pneumococcal nasopharyngeal colonisation in adults
+
+-   Elena's PhD Thesis &rarr; The human lung immune responses to nasopharyngeal pneumococcal colonisation in healthy adults
+
+-   Fernando's Master Thesis
+
+## Articles
+
+### Pneumococcal Diseases
+
+-   [The immunological mechanisms that control pneumococcal carriage](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1006665)
+
+-   [*Streptococcus pneumoniae*: transmission, colonization and invasion](https://pubmed.ncbi.nlm.nih.gov/29599457/)
+
+-   [The Pneumococcus: Epidemiology, Microbiology, and Pathogenesis](https://pubmed.ncbi.nlm.nih.gov/23818515/)
+
+-   [Inflammation induced by influenza virus impairs human innate immune control of pneumococcus](https://pubmed.ncbi.nlm.nih.gov/30374129/)
+ 
+-   [Pneumococcal colonization impairs mucosal immune responses to Live Attenuated Influenza Vaccine in adults](https://www.researchgate.net/publication/348794084_Pneumococcal_colonization_impairs_mucosal_immune_responses_to_Live_Attenuated_Influenza_Vaccine_in_adults)
+ 
+-   [Experimental human pneumococcal carriage models for vaccine research]()
+-   [Innate and adaptive nasal mucosal immune responses following experimental human pneumococcal colonization]()
+
+### Sex Differences
+
+-   [Sex Differences in the Blood Transcriptome Identify Robust Changes in Immune Cell Proportions with Aging and Influenza Infection](https://www.sciencedirect.com/science/article/pii/S2211124719313191)
+
+### Ageing
+- [The Hallmarks of Aging](https://www.cell.com/fulltext/S0092-8674(13)00645-4)
+ 
+ 
+### Systems Biology
+
+### Bioinformatics and Methodologies
+
+-   [Meta-analysis and the science of research synthesis](https://www.nature.com/articles/nature25753)
+
+```{=html}
+<!-- -->
+```
+-   [SIMON, an Automated Machine Learning System, Reveals Immune Signatures of Influenza Vaccine Responses](https://pubmed.ncbi.nlm.nih.gov/31201239/)

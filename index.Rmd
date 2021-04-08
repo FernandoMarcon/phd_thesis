@@ -1,0 +1,12 @@
+---
+title: "Ageing and Sex Differences in Human Pneumococcal Carriage"
+subtitle: "minimal version"
+author: "Fernando Marcon Passos"
+date: "March 2021"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "Computational Systems Biology for pneumonia vaccine development using human challenge models"
+---

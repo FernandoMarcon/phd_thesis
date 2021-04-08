@@ -1,0 +1,158 @@
+# Goals and Questions (Original)
+
+## Goals
+
+### Main Goal
+
+The goal of this project is to provide a systemic description of the interplay between sex differences and ageing in human pneumococcal carriage, as well how these and other factors affect the susceptibility to pneumococcal diseases.
+
+### Specific Goals
+
+## Research Questions
+
+### Does inflammation in the nose change with sex?
+
+### Does inflammation in the nose change with age?
+
+-   Compare baseline values between elderly(AGES) and young (LAIV2)
+
+    -   Control/test for effect of sex → this is something I think we'll have to control for in most of our tests
+
+    -   Linear regression with Age as continuous variable
+
+        -   *It may be that we need to try this analysis in the AGES group alone...we don't have great sampling of middle aged adults in either cohort which may bias the analysis?*
+
+### Can baseline values of inflammation in the nose predict who will become colonized in the future?
+
+-   AGES study we have Days 0,2,7,9
+
+    -   *Right now they determine carriage positive as at least one day with carriage +ve*
+
+        -   *I wonder if there is a way to look at patterns for people who carry for more than one day, etc*
+
+    -   We can find other data sets in the lab to test this with?
+
+### Do any of the cytokines of immune cell readouts (from Flow data) correlate with Spn density?
+
+### Do any of the cytokines correlate with flow cytometry data?
+
+Primarily numbers of granulocytes, monocytes, lymphocytes, B cells, T cells, CD4 T cells, CD8 T cells and MAIT?
+
+### Does the induction of cytokines differ after Spn inoculation with sex?
+
+### Does the induction of cytokines differ after Spn inoculation with age?
+
+-   Using Day 0 to Day 2 changes (log2(FC))
+
+    -   *I wanted to recreate Fig1b from the Nature Immunology paper and was wondering if you could help me by even just sending me the code and I can have a go at it?*
+
+### Is the response different in natural carriers?
+
+-   I don't think we're powered enough to do this as we only have 4 natural carriers in AGES and 1 natural carrier in LAIV2
+
+-   In the Rechallenge group
+
+    -   16 people from AGES were rechallenged 36 months later and Days 0,2,7 were collected
+
+        -   An "R" was just added to the end of the sample ID
+
+    -   There are 4 people that are carriage positive in the rechallenge
+
+        -   Can we see if there is a difference in nasal inflammation or immune cells (measured by flow) between people who were carriage negative vs those that were carriage positive?
+
+## Specific Questions
+
+### Pneumococcal Carriage Load (*Spn Density*)
+
+1.  Quem tem maior chance de desenvolver *carriage*?
+2.  Existem outros grupos de risco?
+3.  Quais sao as variaveis importante p/ predizer *carriage*?
+4.  Existem agrupamentos de individuos baseado em seu perfil de expressao?
+
+### Gene Expression (*RNA-Seq*)
+
+#### At Baseline
+
+1.  Which genes are perturbed between C+ and C- among man/woman?
+2.  Which pathways are enriched between C+ and C- among man/woman?
+3.  Which genes can predict *carriage* in men/women?
+
+#### Day~x~ vs Baseline
+
+1.  Which genes are perturbed among C+ man/women?
+2.  Which pathways are perturbed among C+ man/women?
+3.  Which genes are perturbed among C- man/women?
+4.  Which pathways are perturbed among C- man/women?
+
+### Cytokines (*Luminex*)
+
+#### At Baseline
+
+1.  Which cytokines are perturbed between C+ and C- among man/woman?
+
+#### Day~x~ vs Baseline
+
+1.  Which cytokines are perturbed among C+ man/woman?
+2.  Which cytokines are perturbed among C- man/woman?
+
+### Hormone Levels
+
+### Cell Recruitment (*Flow Cytometry*)
+
+## Technical Questions
+
+-   *any idea how we should deal with the repeated values of cytokines that we have in our datasets?*
+
+## Sex Effect on Spn Carriage
+
+> **Central Question**: Why are human more prone to developing pneumococcal carriage, but men more susceptible to pneumococcal disease?
+
+## Ageing Effect on Spn Carriage
+
+> **Central Question**: Why are older adults more susceptible to pneumococcal disease?
+
+-   Change in carriage status with age ➛ Hugh found a decrease in carriage acquisition with age
+
+    -   Test carriage rates with age
+
+    -   Test the sex difference in carriage rates in AGES
+
+-   Baseline differences in inflammatory status and immune cell composition in the nose
+
+    -   Are there changes in cytokines with age?
+
+        -   IL-2 and FGF-basic
+
+        -   Sex differences?
+
+            -   EGF & IL-8
+
+        -   *Do these remain in younger cohorts/correlate with any other cell types?*
+
+-   How does the response to Spn change with age?
+
+    -   Baseline predictors for carriage status:
+
+        -   Lower CD16 MFI on Granunolcytes
+
+            -   **Does CD16 MFI correlate with OPK data?**
+
+        -   Higher IP-10 and MIG in nose
+
+        -   **Compare to what was found in LAIV studies**
+
+    -   Kinetic responses to Spn colonization in the nose:
+
+        -   How do nasal cytokines change depending on Carriage, Sex and Age?
+
+        -   How do immune cells in the nose change depending on Carriage, Sex and Age?
+
+        -   How does neutrophil degranulation change depending on Carriage, Sex and Age?
+
+        -   How do anti-CPS antibody levels in the nose change with Carriage, Sex and Age?
+
+    -   Adaptive response to Spn colonization in circulation:
+
+        -   How does the serum antibody response (anti-CPS and anti-protein) change depending on Carriage, Sex and Age?
+
+        -   Does the opsonophagocytic function of antibodies change with age?
