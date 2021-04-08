@@ -2,23 +2,23 @@
 
 ## Controlled Human Infection and Rechallenge with Streptococcus pneumoniae Reveals the Protecticve Efficacy of Carriage in Healty Adults
 
-\- High rates of disease and death in the elderly are associated with low carriage prevalence.
+- High rates of disease and death in the elderly are associated with low carriage prevalence.
 
-\- Objective: apply an experimental human pneumococcal carriage model ot investigate the immunizing effect of a single carriage episode;
+- Objective: apply an experimental human pneumococcal carriage model ot investigate the immunizing effect of a single carriage episode;
 
-\- Carriage increased both mucosal and serum IgG levels to pneumococcal proteins and polysccharide, resulting in a fourfold increase in opsonophagocytic activity;
+- Carriage increased both mucosal and serum IgG levels to pneumococcal proteins and polysccharide, resulting in a fourfold increase in opsonophagocytic activity;
 
-\- passive transfer of postcarriage sera from colonized by a heterologous strain in a murine model of invasive pneumococcal pneumonia. These levels were significanlty higher than the protection conferred by either precarriage sera (30%) or saline (10%);
+- passive transfer of postcarriage sera from colonized by a heterologous strain in a murine model of invasive pneumococcal pneumonia. These levels were significanlty higher than the protection conferred by either precarriage sera (30%) or saline (10%);
 
-\- Responses elicited by a sigle experimentally induced subsequent carriage and mice against invasive pneumococcal disease by passive transfer of sera from clonized individuals.
+- Responses elicited by a sigle experimentally induced subsequent carriage and mice against invasive pneumococcal disease by passive transfer of sera from clonized individuals.
 
-\- We have found no relation of baseline serum IgG and carriage outcome after challenge.
+- We have found no relation of baseline serum IgG and carriage outcome after challenge.
 
-\- Intranasal exposure to bacteria boosted serum IgG levels to several pneumococcal prteins, with carriage-positive subjects showing the greatest magnitude of response.
+- Intranasal exposure to bacteria boosted serum IgG levels to several pneumococcal prteins, with carriage-positive subjects showing the greatest magnitude of response.
 
-\- Persistent increased IgG to proteins was observed in carriage-positive subjects at 5 weeks after inoculation and not in those without carriage.
+- Persistent increased IgG to proteins was observed in carriage-positive subjects at 5 weeks after inoculation and not in those without carriage.
 
-\- The boosting effect of exposure is temporary and therefore different than responses induced by persistent carriage. This increased and sustained carriage acquisition after rechallenge up to 11 months after clearance of the first carriage episode.
+- The boosting effect of exposure is temporary and therefore different than responses induced by persistent carriage. This increased and sustained carriage acquisition after rechallenge up to 11 months after clearance of the first carriage episode.
 
 ## Inflammation induced by influenza virus impairs innate control of human pneumococcal carriage
 
@@ -88,20 +88,20 @@ Secondary endpoint:
 
 	- immunological mechanisms associated with altered susceptibility to pneumococcus following LAIV.
 
-\- Flow cytometry analysis:
+- Flow cytometry analysis:
 
 	- nasal cells
 
 	- whole blood
 
-\- Neutrophil opsonoohagocytic killing
+- Neutrophil opsonoohagocytic killing
 
-\- Luminex analysis of nasal lining fluid or stimulated nasal cells
+- Luminex analysis of nasal lining fluid or stimulated nasal cells
 
-\- RNA extraction and sequencing
+- RNA extraction and sequencing
 
 	- Illumina Hiseq4000, 20M reads, 100 paired-end reads
 
-\- Nanostring
+- Nanostring
 
 	- Purified blood neutrophils

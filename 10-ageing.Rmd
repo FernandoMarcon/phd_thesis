@@ -20,23 +20,23 @@ Extreme examples can be found in progeroid conditions-congenital disorders that 
 
 In recent years, scientists studying the molecular and cellular processes that govern these changes and their variation in individuals have identified nine interconnected "hallmarks of aging". Determined mainly by our genetics, but modulated by environmental factors, each of these nine hallmarks contributes to the damage that occurs with age and ultimately drives age-associated pathologies.
 
-1\. Genomic Instability
+1) Genomic Instability
 
-2\. Telomere attrition
+2) Telomere attrition
 
-3\. Epigenetic alterations
+3) Epigenetic alterations
 
-4\. Loss of proteostasis
+4) Loss of proteostasis
 
-5\. Deregulated nutrient sensing
+5) Deregulated nutrient sensing
 
-6\. Mitochondrial disfunction
+6) Mitochondrial disfunction
 
-7\. Cellular senescence
+7) Cellular senescence
 
-8\. Stem cell exhaustion
+8) Stem cell exhaustion
 
-9\. Altered intercellular communication
+9) Altered intercellular communication
 
 ## Therapies
 
@@ -112,9 +112,9 @@ Senescent cells normally destroy themselves via a programmed process called Apop
 
 ## The Role of Senescent Cells in Aging
 
-\- profound chromatin and secretome changes
+- profound chromatin and secretome changes
 
-\- tumor-suppressor activation
+- tumor-suppressor activation
 
 replicative senescence -\> Hayflick - this particular type of senescence is linked to telomere attrition, a process that leads to chromosomal instability and promotes tumorigenesis, supporting the original hypothesis that senescence guards against unrestricted growth of damaged cells.
 

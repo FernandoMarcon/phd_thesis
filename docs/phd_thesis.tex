@@ -94,9 +94,9 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{section}{%
-\chapter*{}\label{section}}
-\addcontentsline{toc}{chapter}{}
+\hypertarget{a}{%
+\chapter*{a}\label{a}}
+\addcontentsline{toc}{chapter}{a}
 
 \begin{quote}
 Infectious disease is one of the few genuine adventures left in the world. The dragons are all dead and the lance grows rusty in the chimney corner\ldots.About the only sporting proposition that remains unimpaired by the relentless domestication of a once free living human species is the war against those ferocious little fellow creatures, which lurk in the dark corners and stalk us in the bodies of rats, mice, and all kinds of domestic animals, which fly and crawl with the insects and waylay us in our food and drink and even in our love. \emph{Hans Zinsser, 1935}
@@ -528,8 +528,8 @@ OUTPUT: - biomarkers list - my performance assessment - plots
 
 ALGORITHM - Read data - test tables equivalence - split data in train, test and validation sets - (Optional) preliminary filter (e.g, low variance, low mean) - Biomarker detecion - Biomarkers: biomarker list extraction - Biomarkers performance test in train/test dataset - Biomarkers performance test in validation dataset - plots
 
-\hypertarget{section-1}{%
-\subsection{}\label{section-1}}
+\hypertarget{section}{%
+\subsection{}\label{section}}
 
 \hypertarget{network-analysis}{%
 \section{Network Analysis}\label{network-analysis}}
@@ -804,23 +804,26 @@ The eigenvalue is a measure of how much of the variance of the observed variable
 \hypertarget{controlled-human-infection-and-rechallenge-with-streptococcus-pneumoniae-reveals-the-protecticve-efficacy-of-carriage-in-healty-adults}{%
 \section{Controlled Human Infection and Rechallenge with Streptococcus pneumoniae Reveals the Protecticve Efficacy of Carriage in Healty Adults}\label{controlled-human-infection-and-rechallenge-with-streptococcus-pneumoniae-reveals-the-protecticve-efficacy-of-carriage-in-healty-adults}}
 
-- High rates of disease and death in the elderly are associated with low carriage prevalence.
-
-- Objective: apply an experimental human pneumococcal carriage model ot investigate the immunizing effect of a single carriage episode;
-
-- Carriage increased both mucosal and serum IgG levels to pneumococcal proteins and polysccharide, resulting in a fourfold increase in opsonophagocytic activity;
-
-- passive transfer of postcarriage sera from colonized by a heterologous strain in a murine model of invasive pneumococcal pneumonia. These levels were significanlty higher than the protection conferred by either precarriage sera (30\%) or saline (10\%);
-
-- Responses elicited by a sigle experimentally induced subsequent carriage and mice against invasive pneumococcal disease by passive transfer of sera from clonized individuals.
-
-- We have found no relation of baseline serum IgG and carriage outcome after challenge.
-
-- Intranasal exposure to bacteria boosted serum IgG levels to several pneumococcal prteins, with carriage-positive subjects showing the greatest magnitude of response.
-
-- Persistent increased IgG to proteins was observed in carriage-positive subjects at 5 weeks after inoculation and not in those without carriage.
-
-- The boosting effect of exposure is temporary and therefore different than responses induced by persistent carriage. This increased and sustained carriage acquisition after rechallenge up to 11 months after clearance of the first carriage episode.
+\begin{itemize}
+\item
+  High rates of disease and death in the elderly are associated with low carriage prevalence.
+\item
+  Objective: apply an experimental human pneumococcal carriage model ot investigate the immunizing effect of a single carriage episode;
+\item
+  Carriage increased both mucosal and serum IgG levels to pneumococcal proteins and polysccharide, resulting in a fourfold increase in opsonophagocytic activity;
+\item
+  passive transfer of postcarriage sera from colonized by a heterologous strain in a murine model of invasive pneumococcal pneumonia. These levels were significanlty higher than the protection conferred by either precarriage sera (30\%) or saline (10\%);
+\item
+  Responses elicited by a sigle experimentally induced subsequent carriage and mice against invasive pneumococcal disease by passive transfer of sera from clonized individuals.
+\item
+  We have found no relation of baseline serum IgG and carriage outcome after challenge.
+\item
+  Intranasal exposure to bacteria boosted serum IgG levels to several pneumococcal prteins, with carriage-positive subjects showing the greatest magnitude of response.
+\item
+  Persistent increased IgG to proteins was observed in carriage-positive subjects at 5 weeks after inoculation and not in those without carriage.
+\item
+  The boosting effect of exposure is temporary and therefore different than responses induced by persistent carriage. This increased and sustained carriage acquisition after rechallenge up to 11 months after clearance of the first carriage episode.
+\end{itemize}
 
 \hypertarget{inflammation-induced-by-influenza-virus-impairs-innate-control-of-human-pneumococcal-carriage}{%
 \section{Inflammation induced by influenza virus impairs innate control of human pneumococcal carriage}\label{inflammation-induced-by-influenza-virus-impairs-innate-control-of-human-pneumococcal-carriage}}
@@ -897,29 +900,37 @@ Secondary endpoint:
 - immunological mechanisms associated with altered susceptibility to pneumococcus following LAIV.
 \end{verbatim}
 
-- Flow cytometry analysis:
+\begin{itemize}
+\item
+  Flow cytometry analysis:
 
-\begin{verbatim}
-- nasal cells
+  \begin{itemize}
+  \item
+    nasal cells
+  \item
+    whole blood
+  \end{itemize}
+\item
+  Neutrophil opsonoohagocytic killing
+\item
+  Luminex analysis of nasal lining fluid or stimulated nasal cells
+\item
+  RNA extraction and sequencing
 
-- whole blood
-\end{verbatim}
+  \begin{itemize}
+  \tightlist
+  \item
+    Illumina Hiseq4000, 20M reads, 100 paired-end reads
+  \end{itemize}
+\item
+  Nanostring
 
-- Neutrophil opsonoohagocytic killing
-
-- Luminex analysis of nasal lining fluid or stimulated nasal cells
-
-- RNA extraction and sequencing
-
-\begin{verbatim}
-- Illumina Hiseq4000, 20M reads, 100 paired-end reads
-\end{verbatim}
-
-- Nanostring
-
-\begin{verbatim}
-- Purified blood neutrophils
-\end{verbatim}
+  \begin{itemize}
+  \tightlist
+  \item
+    Purified blood neutrophils
+  \end{itemize}
+\end{itemize}
 
 \hypertarget{sex-differences-1}{%
 \chapter{Sex Differences}\label{sex-differences-1}}
@@ -950,23 +961,27 @@ Extreme examples can be found in progeroid conditions-congenital disorders that 
 
 In recent years, scientists studying the molecular and cellular processes that govern these changes and their variation in individuals have identified nine interconnected ``hallmarks of aging''. Determined mainly by our genetics, but modulated by environmental factors, each of these nine hallmarks contributes to the damage that occurs with age and ultimately drives age-associated pathologies.
 
-1. Genomic Instability
-
-2. Telomere attrition
-
-3. Epigenetic alterations
-
-4. Loss of proteostasis
-
-5. Deregulated nutrient sensing
-
-6. Mitochondrial disfunction
-
-7. Cellular senescence
-
-8. Stem cell exhaustion
-
-9. Altered intercellular communication
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\item
+  Genomic Instability
+\item
+  Telomere attrition
+\item
+  Epigenetic alterations
+\item
+  Loss of proteostasis
+\item
+  Deregulated nutrient sensing
+\item
+  Mitochondrial disfunction
+\item
+  Cellular senescence
+\item
+  Stem cell exhaustion
+\item
+  Altered intercellular communication
+\end{enumerate}
 
 \hypertarget{therapies}{%
 \section{Therapies}\label{therapies}}
@@ -1053,9 +1068,12 @@ Senescent cells normally destroy themselves via a programmed process called Apop
 \hypertarget{the-role-of-senescent-cells-in-aging}{%
 \section{The Role of Senescent Cells in Aging}\label{the-role-of-senescent-cells-in-aging}}
 
-- profound chromatin and secretome changes
-
-- tumor-suppressor activation
+\begin{itemize}
+\item
+  profound chromatin and secretome changes
+\item
+  tumor-suppressor activation
+\end{itemize}
 
 replicative senescence -\textgreater{} Hayflick - this particular type of senescence is linked to telomere attrition, a process that leads to chromosomal instability and promotes tumorigenesis, supporting the original hypothesis that senescence guards against unrestricted growth of damaged cells.
 
@@ -1466,259 +1484,279 @@ analytes - analitos (Analito é uma substância ou componente químico, em uma a
 
 - PPLR
 
-1. Background
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\item
+  Background
 
 \begin{verbatim}
-    - estimating expression from short sequence reads poses unique problems such as accurate read alignment in the presence of sequencing errors, measurement bias depending on library preparation methodology, and complexity in estimating the expression of distinct mRNA transcripts with shared exons.
+ - estimating expression from short sequence reads poses unique problems such as accurate read alignment in the presence of sequencing errors, measurement bias depending on library preparation methodology, and complexity in estimating the expression of distinct mRNA transcripts with shared exons.
 
-    - the optimal
-
-workflow for a given application remains a subject of
-
-intensive investigation.
-
-    - The three major steps of differential expression analysis by RNA-Seq are:
-
-        + alignment of reads to an annotated genome (or less commonly, ab initio reconstruction of a transcriptome annotation)
-
-        + expression modeling to obtain gene-level and/or transcript-level expression estimates
-
-        + statistical analysis to identify differentially expressed genes or transcripts between comparison groups.
-
-    - the ultimate evaluation of any given tool must take into consideration the samples to which it will be applied and the workflow context in which it will be employed.
-
-    - We find that
-
-different RNA-Seq analysis workflows differ widely in
-
-their performance, as assessed by recall, or the propor-
-
-tion of reference-identified genes that were also identi-
-
-fied by the given workflow, and precision, or the
-
-proportion of genes identified by the workflow that were
-
-also identified by the reference.
-
-    - Many workflows per-
-
-form equally well, but are calibrated differently with re-
-
-spect to favoring higher recall or precision, with an
-
-inverse relationship between these parameters.
-
-    - we recommend that the selection of a
-
-given approach be guided by the tolerance of down-
-
-stream applications for type I and type II errors.
+ - the optimal
 \end{verbatim}
 
-2. Methods
+  workflow for a given application remains a subject of
+
+  intensive investigation.
 
 \begin{verbatim}
-2.1 Samples
+ - The three major steps of differential expression analysis by RNA-Seq are:
 
-2.2 RNA sequencing
+     + alignment of reads to an annotated genome (or less commonly, ab initio reconstruction of a transcriptome annotation)
 
-2.3 Read alignment, expression modeling, and differential expression identification
+     + expression modeling to obtain gene-level and/or transcript-level expression estimates
 
-    all code are available at <https://github.com/cckim47/kimlab/tree/master/rnaseq.>
+     + statistical analysis to identify differentially expressed genes or transcripts between comparison groups.
 
-    Reads were aligned to release GRCh37 of the human genome.
+ - the ultimate evaluation of any given tool must take into consideration the samples to which it will be applied and the workflow context in which it will be employed.
 
-    Reads were aligned with:
-
-        - Bowtie2
-
-        - HISAT2
-
-        - Kallisto
-
-        - Salmon
-
-        - Sailfish
-
-        - SeqMap
-
-        - STAR
-
-        - TopHat2
-
-    Gene and transcript expression was estimated with:
-
-        - BitSeq
-
-        - cufflinks
-
-        - htseq
-
-        - IsoEM
-
-        - Kallisto
-
-        - RSEM
-
-        - rSeq
-
-        - Sailfish
-
-        - Salmon
-
-        - STAR
-
-        - Stringtie
-
-        - eXpress
-
-    Expression matrices for differential expression input were generated using custom scripts as well as the prepDE.py script provided at the Stringtie website.
-
-    Differentially expressed genes or transcripts were identified with Ballgown, baySeq, BitSeq, cuffdiff, DESeq2, EBseq, edgeR exact test, limma coupled with vst or voom transformation, NBPseq, NOISeqBIO, SAMseq and Sleuth.
-
-        Of these, all but Ballgown, BitSeq, NBPSeq, SAMSeq, and Sleuth used intrinsic filtering or recommended extrinsic filtering of genes or transcripts prior to testing.
-
-        For Sailfish and Salmon, outputs were converted to a Sleuth-ready format using wasabi [55].
-
-        For Kallisto, Sailfish, Salmon, and BitSeq, transcript-level values were condensed to gene-level values using tximport prior to evaluating gene-level differential expression [56].
-
-    For all differential expression analyses performed at the transcript-level, significant transcripts were converted to the corresponding gene for performance evaluation, such that if a single transcript was called as differentially expressed, the corresponding gene was also called differentially expressed.
-
-    All software was run at a detection level of alpha of 0.05, FDR of 0.05, or PPLR in the most extreme 0.05.
-
-2.4 Preparation of reference datasets
-
-    series matrix files were:
-
-        1. downloaded from the NCBI Gene Expression Omnibus
-
-        2. log 2 transformed if necessary
-
-        3. full-quantile normalized
-
-            Smyth GK. Linear models and empirical bayes methods for assessing differential expression in microarray experiments. Stat Appl Genet Mol Biol. 2004;3:1--25.
-
-        4. analyzed for statistically significant gene expression between classical and nonclassical monocytes.
-
-            To reduce bias introduced by a single statistical method, we employed two approaches:
-
-                - Significance Analysis of Microarrays (SAM) [58] with a false discovery rate of 0.05
-
-                    Tusher VG, Tibshirani R, Chu G. Significance analysis of microarrays applied to the ionizing radiation response. Proc Natl Acad Sci U S A. 2001;98:5116--21.
-
-                - limma [59, 60],with a BH-adjusted p-value of 0.05.
-
-                    Kim CC, Falkow S. Significance analysis of lexical bias in microarray data. BMC Bioinformatics. 2003;4:12.
-
-                    Smyth GK. Limma: linear models for microarray data. In: Gentleman R, Carey VJ, Huber W, Irizarry RA, Dudoit S, editors. Bioinforma. Comput. Biol. Solut. Using R bioconductor [internet]. New York, NY: Springer New York; 2005. p.397--420. Available from: <http://dx.doi.org/10.1007/0-387-29362-0_23.>
-
-            Performance of the workflows against both SAM and limma were compared to one another and found to exhibit good reproducibility regardless of the
-
-            statistical method used to generate the data; as such, we chose to use the genes at the intersection of the two methods for our final reference gene sets.
-
-2.5 Quantification of recall and precision
-
-    Because absolute recall and precision values are influenced by the repertoire of analytes that can be measured by a given platform, they used only the common genes.
-
-    Recall was calculated as the number of significant genes in the intersection of the test RNA-Seq datasetwith the reference dataset, divided by the number of genes
-
-    identified as significant in the reference dataset.
-
-    Precision was calculated as the number of significant genes in the intersection of the test RNA-Seq dataset with the reference dataset, divided by the number of genes identified as significant in the test RNA-Seq dataset.
+ - We find that
 \end{verbatim}
 
-3. Results and discussion
+  different RNA-Seq analysis workflows differ widely in
+
+  their performance, as assessed by recall, or the propor-
+
+  tion of reference-identified genes that were also identi-
+
+  fied by the given workflow, and precision, or the
+
+  proportion of genes identified by the workflow that were
+
+  also identified by the reference.
 
 \begin{verbatim}
-3.1 Generation of a real-world RNA-Seq dataset for benchmarking
-
-3.2 Overview of empirical testing
-
-    we found that performance of various RNA-Seq workflows was remarkably consistent across all four reference datasets.
-
-    We note, however, that these reference datasets are also subject to the inherent biases of the experimental and computational methods used to produce them.
-
-3.3 Differential influence of workflow stages
-
-    In general, more significant genes were observed when evaluations were performed at the transcript level, because there are more transcripts than genes to potentially be differentially expressed.
-
-    we observed substantial variability in the number of differentially expressed genes identified (n = 208 to 9,489 significant genes)
-
-    Beyond the overall variation, two trends were apparent when the number of genes identified was examined on a by-tool basis:
-
-        1. the differential expression tool had a larger impact on the number of genes identified than the read aligner and expression modeler
-
-            Consequently, the coefficient of variation of the medians was largest for differential expression tools, as compared to read aligners and expression modelers, when assessed at both the gene level (20.5 versus 9.9 and 9.8, respectively) and the transcript level (43.4 versus 10.8 and 39.3).
-
-        2. differential expression tools varied in their robustness to different inputs, with some tools exhibiting relatively reproducible predictions regardless of   the read aligner and expression modeler choices and expression units (e.g., Ballgown), and other differential expression analysis tools exhibiting a wide    range of predictions as the input parameters varied.
-
-    We also evaluated performance of the workflows by calculating recall (intersecting significant genes divided by total number of significant reference genes) and precision (intersecting significant genes divided by total number of significant genes identified by RNA-Seq), using the microarray datasets as references:
-
-        for both precision and recall, the largest effects were observed in workflows differing in the statistical analysis of differential expression, as indicated by the increased medians of differences for this step
-
-3.4 heterogeneiry in performance characteristics of different workflows
-
-    Recall across the workflows was highly correlated with the number of genes identified (Fig. 5a, b). This was true regardless of which of the reference datasets was used for comparison
-
-    The relative rankings of the workflows, ordered by absolute recall value, tended to be consistent across reference datasets
-
-        For gene-level predictions, a subset of workflows using SAMseq exhibited the highest recall values;
-
-        for transcript-level predictions, workflows using baySeq and NBPSeq exhibited the highest recall.
-
-        However, there were exceptions to these rules, depending on the choice of read aligner and expression modeler.
-
-    Precision was highly inversely correlated with the number of genes predicted across the workflows
-
-    Rankings were generally consistent regardless of which reference dataset was used, as was the overall relationship between significant genes and precision
-
-        For gene-level predictions, a subset of workflows using NOISeqBIO exhibited the highest precision, whereas for transcript-level predictions those with the highest precision used several different combinations of tools, with the most prevalent being Ballgown and NOISeqBIO. Strikingly, when used on transcript-level data, the commonly used combination of TopHat2, cufflinks and cuffdiff exhibited one of the highest precision values, coupled with the second lowest number of differentially expressed genes identified
-
-3.5 Performance tradeoff
-
-    the workflows employing NOISeqBIO that exhibit the highest precision were also among those with the lowest recall
-
-    An investigation of the relationship between precision and recall revealed that this tradeoff generally persisted throughout, with many workflows following an inverse linear relationship between precision and recall.
-
-        This held true for both gene- and transcript-level analysis, was true regardless of the expression estimation units, and was also consistent across reference datasets
-
-    the differential expression step had the greatest impact on the performance of each workflow along the spectrum of recall and precision.
-
-    Specific tools that tended to track along this linear tradeoff were Ballgown, DESeq2, limma + voom, limma + vst and SAMseq;
-
-    baySeq and EBseq consistently deviated the furthest.
-
-    SAMseq, one tool with a nonparametric approach, has been highlighted as a high performer previously, in particular when there are a large number of replicates available to approximate the underlying distribution, as is the case here; it performs well, though it does exhibit a tendency toward higher recall at the expense of precision.
-
-    NOISeqBIO, the other tested differential expression tool that assumes a nonparametric distribution, has previously been observed to identify fewer differentially expressed genes with larger sample sizes; we also observe this, as well as correspondingly low recall values.
-
-    Of the differential expression methods tested, baySeq and EBseq are the most similar to each other in underlying statistical methodology; both use an underlying negative binomial model, and then estimate a posterior probability of being differentially expressed for each gene. The observation that EBseq deviated furthest from the precision/recall performance line, due to decreased precision without gains in recall, is similar to previous observations showing that EBSeq tended to produce many false positives with large sample sizes. When applied to gene-level data, baySeq performed similarly to EBseq though not as extreme, with relatively low recall without commensurate gains in precision, which may reflect the similarity in their underlying methods.
-
-    All three linear model workflows perform well and track along the linear precision/recall tradeoff, irrespective of upstream processing. However, there is some difference in default tuning, as Ballgown results tended towards higher precision, whereas limma + voom and limma + vst tended towards higher recall.
-
-    Using BitSeq as the expression modeler tended to result in identification of large numbers of differentially expressed genes, but only in combination with
-
-    differential expression tools that used an underlying negative binomial model for expression data (BaySeq, DESeq2, edgeR, and NBPSeq);
-
-    EBSeq was the one exception, with the number of differentially expressed genes within range of workflows using differential expression tools that model other distributions (Ballgown, BitSeq, limma, and NOISeqBIO).
-
-    We note that BitSeq was unusual in that its most prevalent estimated expression count value was between 1 and 2, rather than less than 1 as most expression modelers estimated; this likely explains why these expression data were poorly modeled by a negative binomial distribution.
-
-    using STAR as the read aligner, most notably with Ballgown as the differential expression tool, led to some of the highest performance workflows having a balance of precision and recall. Interestingly, these best performing workflows are not combinations of aligner and estimator that are suggested by the Ballgown authors, demonstrating the utility of broad, empirical exploration for uncovering improved workflows.    
-
-    the selection of a specific workflow should be largely influenced by the tolerance of a specific application for type I versus type II errors. However, it is also important to note that a significant number of workflows deviated from the roughly linear relationship between recall and precision, particularly for tools targeted at gene-level analyses; such workflows could be considered to exhibit lower performance, as higher performance workflows would be available as alternatives at a given recall or precision target value.
-
-    our findings reflect a defined set of parameters, such as read length, sequencing coverage, sample number, and genetic polymorphism. Thus, it is possible that the performance, both absolute and relative, of the above workflows could vary under other conditions, as some studies have observed
-
-        Kanitz A, Gypas F, Gruber AJ, Gruber AR, Martin G, Zavolan M. Comparative assessment of methods for the computational inference of transcript isoform abundance from RNA-seq data. Genome Biol. 2015;16:150.
-
-        Soneson C, Delorenzi M. A comparison of methods for differential expression analysis of RNA-seq data. BMC Bioinformatics. 2013;14:91.
-
-    Importantly, when selecting a pipeline it is essential to consider not only the specific tools selected at each stage of the workflow, but also how they interact with one another.
+ - Many workflows per-
 \end{verbatim}
 
-4. Conclusions
+  form equally well, but are calibrated differently with re-
+
+  spect to favoring higher recall or precision, with an
+
+  inverse relationship between these parameters.
+
+\begin{verbatim}
+ - we recommend that the selection of a
+\end{verbatim}
+
+  given approach be guided by the tolerance of down-
+
+  stream applications for type I and type II errors.
+\item
+  Methods
+
+  2.1 Samples
+
+  2.2 RNA sequencing
+
+  2.3 Read alignment, expression modeling, and differential expression identification
+
+\begin{verbatim}
+ all code are available at <https://github.com/cckim47/kimlab/tree/master/rnaseq.>
+
+ Reads were aligned to release GRCh37 of the human genome.
+
+ Reads were aligned with:
+
+     - Bowtie2
+
+     - HISAT2
+
+     - Kallisto
+
+     - Salmon
+
+     - Sailfish
+
+     - SeqMap
+
+     - STAR
+
+     - TopHat2
+
+ Gene and transcript expression was estimated with:
+
+     - BitSeq
+
+     - cufflinks
+
+     - htseq
+
+     - IsoEM
+
+     - Kallisto
+
+     - RSEM
+
+     - rSeq
+
+     - Sailfish
+
+     - Salmon
+
+     - STAR
+
+     - Stringtie
+
+     - eXpress
+
+ Expression matrices for differential expression input were generated using custom scripts as well as the prepDE.py script provided at the Stringtie website.
+
+ Differentially expressed genes or transcripts were identified with Ballgown, baySeq, BitSeq, cuffdiff, DESeq2, EBseq, edgeR exact test, limma coupled with vst or voom transformation, NBPseq, NOISeqBIO, SAMseq and Sleuth.
+
+     Of these, all but Ballgown, BitSeq, NBPSeq, SAMSeq, and Sleuth used intrinsic filtering or recommended extrinsic filtering of genes or transcripts prior to testing.
+
+     For Sailfish and Salmon, outputs were converted to a Sleuth-ready format using wasabi [55].
+
+     For Kallisto, Sailfish, Salmon, and BitSeq, transcript-level values were condensed to gene-level values using tximport prior to evaluating gene-level differential expression [56].
+
+ For all differential expression analyses performed at the transcript-level, significant transcripts were converted to the corresponding gene for performance evaluation, such that if a single transcript was called as differentially expressed, the corresponding gene was also called differentially expressed.
+
+ All software was run at a detection level of alpha of 0.05, FDR of 0.05, or PPLR in the most extreme 0.05.
+\end{verbatim}
+
+  2.4 Preparation of reference datasets
+
+\begin{verbatim}
+ series matrix files were:
+
+     1. downloaded from the NCBI Gene Expression Omnibus
+
+     2. log 2 transformed if necessary
+
+     3. full-quantile normalized
+
+         Smyth GK. Linear models and empirical bayes methods for assessing differential expression in microarray experiments. Stat Appl Genet Mol Biol. 2004;3:1--25.
+
+     4. analyzed for statistically significant gene expression between classical and nonclassical monocytes.
+
+         To reduce bias introduced by a single statistical method, we employed two approaches:
+
+             - Significance Analysis of Microarrays (SAM) [58] with a false discovery rate of 0.05
+
+                 Tusher VG, Tibshirani R, Chu G. Significance analysis of microarrays applied to the ionizing radiation response. Proc Natl Acad Sci U S A. 2001;98:5116--21.
+
+             - limma [59, 60],with a BH-adjusted p-value of 0.05.
+
+                 Kim CC, Falkow S. Significance analysis of lexical bias in microarray data. BMC Bioinformatics. 2003;4:12.
+
+                 Smyth GK. Limma: linear models for microarray data. In: Gentleman R, Carey VJ, Huber W, Irizarry RA, Dudoit S, editors. Bioinforma. Comput. Biol. Solut. Using R bioconductor [internet]. New York, NY: Springer New York; 2005. p.397--420. Available from: <http://dx.doi.org/10.1007/0-387-29362-0_23.>
+
+         Performance of the workflows against both SAM and limma were compared to one another and found to exhibit good reproducibility regardless of the
+
+         statistical method used to generate the data; as such, we chose to use the genes at the intersection of the two methods for our final reference gene sets.
+\end{verbatim}
+
+  2.5 Quantification of recall and precision
+
+\begin{verbatim}
+ Because absolute recall and precision values are influenced by the repertoire of analytes that can be measured by a given platform, they used only the common genes.
+
+ Recall was calculated as the number of significant genes in the intersection of the test RNA-Seq datasetwith the reference dataset, divided by the number of genes
+
+ identified as significant in the reference dataset.
+
+ Precision was calculated as the number of significant genes in the intersection of the test RNA-Seq dataset with the reference dataset, divided by the number of genes identified as significant in the test RNA-Seq dataset.
+\end{verbatim}
+\item
+  Results and discussion
+
+  3.1 Generation of a real-world RNA-Seq dataset for benchmarking
+
+  3.2 Overview of empirical testing
+
+\begin{verbatim}
+ we found that performance of various RNA-Seq workflows was remarkably consistent across all four reference datasets.
+
+ We note, however, that these reference datasets are also subject to the inherent biases of the experimental and computational methods used to produce them.
+\end{verbatim}
+
+  3.3 Differential influence of workflow stages
+
+\begin{verbatim}
+ In general, more significant genes were observed when evaluations were performed at the transcript level, because there are more transcripts than genes to potentially be differentially expressed.
+
+ we observed substantial variability in the number of differentially expressed genes identified (n = 208 to 9,489 significant genes)
+
+ Beyond the overall variation, two trends were apparent when the number of genes identified was examined on a by-tool basis:
+
+     1. the differential expression tool had a larger impact on the number of genes identified than the read aligner and expression modeler
+
+         Consequently, the coefficient of variation of the medians was largest for differential expression tools, as compared to read aligners and expression modelers, when assessed at both the gene level (20.5 versus 9.9 and 9.8, respectively) and the transcript level (43.4 versus 10.8 and 39.3).
+
+     2. differential expression tools varied in their robustness to different inputs, with some tools exhibiting relatively reproducible predictions regardless of   the read aligner and expression modeler choices and expression units (e.g., Ballgown), and other differential expression analysis tools exhibiting a wide    range of predictions as the input parameters varied.
+
+ We also evaluated performance of the workflows by calculating recall (intersecting significant genes divided by total number of significant reference genes) and precision (intersecting significant genes divided by total number of significant genes identified by RNA-Seq), using the microarray datasets as references:
+
+     for both precision and recall, the largest effects were observed in workflows differing in the statistical analysis of differential expression, as indicated by the increased medians of differences for this step
+\end{verbatim}
+
+  3.4 heterogeneiry in performance characteristics of different workflows
+
+\begin{verbatim}
+ Recall across the workflows was highly correlated with the number of genes identified (Fig. 5a, b). This was true regardless of which of the reference datasets was used for comparison
+
+ The relative rankings of the workflows, ordered by absolute recall value, tended to be consistent across reference datasets
+
+     For gene-level predictions, a subset of workflows using SAMseq exhibited the highest recall values;
+
+     for transcript-level predictions, workflows using baySeq and NBPSeq exhibited the highest recall.
+
+     However, there were exceptions to these rules, depending on the choice of read aligner and expression modeler.
+
+ Precision was highly inversely correlated with the number of genes predicted across the workflows
+
+ Rankings were generally consistent regardless of which reference dataset was used, as was the overall relationship between significant genes and precision
+
+     For gene-level predictions, a subset of workflows using NOISeqBIO exhibited the highest precision, whereas for transcript-level predictions those with the highest precision used several different combinations of tools, with the most prevalent being Ballgown and NOISeqBIO. Strikingly, when used on transcript-level data, the commonly used combination of TopHat2, cufflinks and cuffdiff exhibited one of the highest precision values, coupled with the second lowest number of differentially expressed genes identified
+\end{verbatim}
+
+  3.5 Performance tradeoff
+
+\begin{verbatim}
+ the workflows employing NOISeqBIO that exhibit the highest precision were also among those with the lowest recall
+
+ An investigation of the relationship between precision and recall revealed that this tradeoff generally persisted throughout, with many workflows following an inverse linear relationship between precision and recall.
+
+     This held true for both gene- and transcript-level analysis, was true regardless of the expression estimation units, and was also consistent across reference datasets
+
+ the differential expression step had the greatest impact on the performance of each workflow along the spectrum of recall and precision.
+
+ Specific tools that tended to track along this linear tradeoff were Ballgown, DESeq2, limma + voom, limma + vst and SAMseq;
+
+ baySeq and EBseq consistently deviated the furthest.
+
+ SAMseq, one tool with a nonparametric approach, has been highlighted as a high performer previously, in particular when there are a large number of replicates available to approximate the underlying distribution, as is the case here; it performs well, though it does exhibit a tendency toward higher recall at the expense of precision.
+
+ NOISeqBIO, the other tested differential expression tool that assumes a nonparametric distribution, has previously been observed to identify fewer differentially expressed genes with larger sample sizes; we also observe this, as well as correspondingly low recall values.
+
+ Of the differential expression methods tested, baySeq and EBseq are the most similar to each other in underlying statistical methodology; both use an underlying negative binomial model, and then estimate a posterior probability of being differentially expressed for each gene. The observation that EBseq deviated furthest from the precision/recall performance line, due to decreased precision without gains in recall, is similar to previous observations showing that EBSeq tended to produce many false positives with large sample sizes. When applied to gene-level data, baySeq performed similarly to EBseq though not as extreme, with relatively low recall without commensurate gains in precision, which may reflect the similarity in their underlying methods.
+
+ All three linear model workflows perform well and track along the linear precision/recall tradeoff, irrespective of upstream processing. However, there is some difference in default tuning, as Ballgown results tended towards higher precision, whereas limma + voom and limma + vst tended towards higher recall.
+
+ Using BitSeq as the expression modeler tended to result in identification of large numbers of differentially expressed genes, but only in combination with
+
+ differential expression tools that used an underlying negative binomial model for expression data (BaySeq, DESeq2, edgeR, and NBPSeq);
+
+ EBSeq was the one exception, with the number of differentially expressed genes within range of workflows using differential expression tools that model other distributions (Ballgown, BitSeq, limma, and NOISeqBIO).
+
+ We note that BitSeq was unusual in that its most prevalent estimated expression count value was between 1 and 2, rather than less than 1 as most expression modelers estimated; this likely explains why these expression data were poorly modeled by a negative binomial distribution.
+
+ using STAR as the read aligner, most notably with Ballgown as the differential expression tool, led to some of the highest performance workflows having a balance of precision and recall. Interestingly, these best performing workflows are not combinations of aligner and estimator that are suggested by the Ballgown authors, demonstrating the utility of broad, empirical exploration for uncovering improved workflows.    
+
+ the selection of a specific workflow should be largely influenced by the tolerance of a specific application for type I versus type II errors. However, it is also important to note that a significant number of workflows deviated from the roughly linear relationship between recall and precision, particularly for tools targeted at gene-level analyses; such workflows could be considered to exhibit lower performance, as higher performance workflows would be available as alternatives at a given recall or precision target value.
+
+ our findings reflect a defined set of parameters, such as read length, sequencing coverage, sample number, and genetic polymorphism. Thus, it is possible that the performance, both absolute and relative, of the above workflows could vary under other conditions, as some studies have observed
+
+     Kanitz A, Gypas F, Gruber AJ, Gruber AR, Martin G, Zavolan M. Comparative assessment of methods for the computational inference of transcript isoform abundance from RNA-seq data. Genome Biol. 2015;16:150.
+
+     Soneson C, Delorenzi M. A comparison of methods for differential expression analysis of RNA-seq data. BMC Bioinformatics. 2013;14:91.
+
+ Importantly, when selecting a pipeline it is essential to consider not only the specific tools selected at each stage of the workflow, but also how they interact with one another.
+\end{verbatim}
+\item
+  Conclusions
+\end{enumerate}
 
 \hypertarget{network-analysis-1}{%
 \section{Network Analysis}\label{network-analysis-1}}
@@ -1913,29 +1951,37 @@ Ion Torrent: Proton/PGM sequencing
 \hypertarget{star}{%
 \subsubsection{STAR}\label{star}}
 
-1. Basic Workflow
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\item
+  Basic Workflow
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    Generate genome indexes files
+
+    FASTA + GTF -\textgreater{} genome indexes
+  \item
+    Mapping reads to the genome
+
+    genome indexes + RNA-Seq reads (FASTA/FASTQ) -\textgreater{} :
 
 \begin{verbatim}
-1. Generate genome indexes files
+ - alignments (BAM/SAM)
 
-    FASTA + GTF -\> genome indexes
+ - mappring summary statistics
 
-2. Mapping reads to the genome
+ - splice junctions
 
-    genome indexes + RNA-Seq reads (FASTA/FASTQ) -\> :
+ - unmmaped reads
 
-        - alignments (BAM/SAM)
+ - signal (wiggle) tracls
 
-        - mappring summary statistics
-
-        - splice junctions
-
-        - unmmaped reads
-
-        - signal (wiggle) tracls
-
-        - ...
+ - ...
 \end{verbatim}
+  \end{enumerate}
+\end{enumerate}
 
 \hypertarget{microbiome-data-analysis}{%
 \subsection{microbiome data analysis}\label{microbiome-data-analysis}}
@@ -2422,31 +2468,36 @@ If the answer is 'yes' to all three questions, the PCA is a good method to use.
 
 you should have tabular data organized with n rows and p+1 columns, where there is one column corresponding to your dependent variable (usually denoted Y) and p columns corresponding to each of your independent variables (the matrix of which is usually denoted X).
 
-1. Separate your data into Y and X, as defined above --- we'll mostly be working with X.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\item
+  Separate your data into Y and X, as defined above --- we'll mostly be working with X.
+\item
+  Take the matrix of independent variables X and, for each column, subtract the mean of that column from each entry. (This ensures that each column has a mean of zero.)
+\item
+  Decide whether or not to standardize. Given the columns of X, are features with higher variance more important than features with lower variance, or is the importance of features independent of the variance? (In this case, importance means how well that feature predicts Y.) If the importance of features is independent of the variance of the features, then divide each observation in a column by that column's standard deviation. (This, combined with step 2, standardizes each column of X to make sure each column has mean zero and standard deviation 1.) Call the centered (and possibly standardized) matrix Z.
+\item
+  Take the matrix Z, transpose it, and multiply the transposed matrix by Z. (Writing this out mathematically, we would write this as ZᵀZ.) The resulting matrix is the covariance matrix of Z, up to a constant.
+\item
+  (This is probably the toughest step to follow --- stick with me here.) Calculate the eigenvectors and their corresponding eigenvalues of ZᵀZ. This is quite easily done in most computing packages--- in fact, the eigendecomposition of ZᵀZ is where we decompose ZᵀZ into PDP⁻¹, where P is the matrix of eigenvectors and D is the diagonal matrix with eigenvalues on the diagonal and values of zero everywhere else. The eigenvalues on the diagonal of D will be associated with the corresponding column in P --- that is, the first element of D is λ₁ and the corresponding eigenvector is the first column of P. This holds for all elements in D and their corresponding eigenvectors in P. We will always be able to calculate PDP⁻¹ in this fashion. (Bonus: for those interested, we can always calculate PDP⁻¹ in this fashion because ZᵀZ is a symmetric, positive semidefinite matrix.)
+\item
+  Take the eigenvalues λ₁, λ₂, \ldots, λp and sort them from largest to smallest. In doing so, sort the eigenvectors in P accordingly. (For example, if λ₂ is the largest eigenvalue, then take the second column of P and place it in the first column position.) Depending on the computing package, this may be done automatically. Call this sorted matrix of eigenvectors P*. (The columns of P* should be the same as the columns of P, but perhaps in a different order.) Note that these eigenvectors are independent of one another.
+\item
+  Calculate Z* = ZP*. This new matrix, Z*, is a centered/standardized version of X but now each observation is a combination of the original variables, where the weights are determined by the eigenvector. As a bonus, because our eigenvectors in P* are independent of one another, each column of Z* is also independent of one another!
+\item
+  Finally, we need to determine how many features to keep versus how many to drop. There are three common methods to determine this, discussed below and followed by an explicit example:
 
-2. Take the matrix of independent variables X and, for each column, subtract the mean of that column from each entry. (This ensures that each column has a mean of zero.)
+  \begin{itemize}
+  \item
+    Method 1: We arbitrarily select how many dimensions we want to keep. Perhaps I want to visually represent things in two dimensions, so I may only keep two features. This is use-case dependent and there isn't a hard-and-fast rule for how many features I should pick.
+  \item
+    Method 2: Calculate the proportion of variance explained (briefly explained below) for each feature, pick a threshold, and add features until you hit that threshold. (For example, if you want to explain 80\% of the total variability possibly explained by your model, add features with the largest explained proportion of variance until your proportion of variance explained hits or exceeds 80\%.)
+  \item
+    Method 3: This is closely related to Method 2. Calculate the proportion of variance explained for each feature, sort features by proportion of variance explained and plot the cumulative proportion of variance explained as you keep more features. (This plot is called a scree plot, shown below.) One can pick how many features to include by identifying the point where adding a new feature has a significant drop in variance explained relative to the previous feature, and choosing features up until that point. (I call this the ``find the elbow'' method, as looking at the ``bend'' or ``elbow'' in the scree plot determines where the biggest drop in proportion of variance explained occurs.)
+  \end{itemize}
 
-3. Decide whether or not to standardize. Given the columns of X, are features with higher variance more important than features with lower variance, or is the importance of features independent of the variance? (In this case, importance means how well that feature predicts Y.) If the importance of features is independent of the variance of the features, then divide each observation in a column by that column's standard deviation. (This, combined with step 2, standardizes each column of X to make sure each column has mean zero and standard deviation 1.) Call the centered (and possibly standardized) matrix Z.
-
-4. Take the matrix Z, transpose it, and multiply the transposed matrix by Z. (Writing this out mathematically, we would write this as ZᵀZ.) The resulting matrix is the covariance matrix of Z, up to a constant.
-
-5. (This is probably the toughest step to follow --- stick with me here.) Calculate the eigenvectors and their corresponding eigenvalues of ZᵀZ. This is quite easily done in most computing packages--- in fact, the eigendecomposition of ZᵀZ is where we decompose ZᵀZ into PDP⁻¹, where P is the matrix of eigenvectors and D is the diagonal matrix with eigenvalues on the diagonal and values of zero everywhere else. The eigenvalues on the diagonal of D will be associated with the corresponding column in P --- that is, the first element of D is λ₁ and the corresponding eigenvector is the first column of P. This holds for all elements in D and their corresponding eigenvectors in P. We will always be able to calculate PDP⁻¹ in this fashion. (Bonus: for those interested, we can always calculate PDP⁻¹ in this fashion because ZᵀZ is a symmetric, positive semidefinite matrix.)
-
-6. Take the eigenvalues λ₁, λ₂, \ldots, λp and sort them from largest to smallest. In doing so, sort the eigenvectors in P accordingly. (For example, if λ₂ is the largest eigenvalue, then take the second column of P and place it in the first column position.) Depending on the computing package, this may be done automatically. Call this sorted matrix of eigenvectors P*. (The columns of P* should be the same as the columns of P, but perhaps in a different order.) Note that these eigenvectors are independent of one another.
-
-7. Calculate Z* = ZP*. This new matrix, Z*, is a centered/standardized version of X but now each observation is a combination of the original variables, where the weights are determined by the eigenvector. As a bonus, because our eigenvectors in P* are independent of one another, each column of Z* is also independent of one another!
-
-8. Finally, we need to determine how many features to keep versus how many to drop. There are three common methods to determine this, discussed below and followed by an explicit example:
-
-\begin{verbatim}
-- Method 1: We arbitrarily select how many dimensions we want to keep. Perhaps I want to visually represent things in two dimensions, so I may only keep two features. This is use-case dependent and there isn't a hard-and-fast rule for how many features I should pick.
-
-- Method 2: Calculate the proportion of variance explained (briefly explained below) for each feature, pick a threshold, and add features until you hit that threshold. (For example, if you want to explain 80% of the total variability possibly explained by your model, add features with the largest explained proportion of variance until your proportion of variance explained hits or exceeds 80%.)
-
-- Method 3: This is closely related to Method 2. Calculate the proportion of variance explained for each feature, sort features by proportion of variance explained and plot the cumulative proportion of variance explained as you keep more features. (This plot is called a scree plot, shown below.) One can pick how many features to include by identifying the point where adding a new feature has a significant drop in variance explained relative to the previous feature, and choosing features up until that point. (I call this the "find the elbow" method, as looking at the "bend" or "elbow" in the scree plot determines where the biggest drop in proportion of variance explained occurs.)
-
-Because each eigenvalue is roughly the importance of its corresponding eigenvector, the proportion of variance explained is the sum of the eigenvalues of the features you kept divided by the sum of the eigenvalues of all features.
-\end{verbatim}
+  Because each eigenvalue is roughly the importance of its corresponding eigenvector, the proportion of variance explained is the sum of the eigenvalues of the features you kept divided by the sum of the eigenvalues of all features.
+\end{enumerate}
 
 Why dows PCA work?
 
@@ -2520,7 +2571,12 @@ resources:
 
 N-Integration discriminant analysis with DIABLO
 
-1. Data Input
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  Data Input
+\end{enumerate}
 
 The data for mixDIABLO need to be set up as a list of data matrices matching the same samples.
 
@@ -2532,10 +2588,15 @@ are 'omics data sets, where each row matches to the same biological sample from 
 The outcome Y is set as a factor for the supervised analysis. Here Y corresponds to the PAM50 classification.
 \end{verbatim}
 
-2. Tunning
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{1}
+\item
+  Tunning
 
-\begin{verbatim}
-- Matrix design
+  \begin{itemize}
+  \item
+    Matrix design
 
     determines which blocks should be connected to maximize the correlation or covariance between components.
 
@@ -2543,98 +2604,128 @@ The outcome Y is set as a factor for the supervised analysis. Here Y corresponds
 
     The design can be chosen based on:
 
-        - prior knowledge ('I expect mRNA and miRNA to be highly correlated')
+\begin{verbatim}
+  - prior knowledge ('I expect mRNA and miRNA to be highly correlated')
 
-        - data-driven (e.g. based on a prior analysis, such as a non sparse analysis with block.pls to examine the correlation between the different blocks via the modelled components).
+  - data-driven (e.g. based on a prior analysis, such as a non sparse analysis with block.pls to examine the correlation between the different blocks via the modelled components).
+\end{verbatim}
 
-    Our experience has shown that a compromise between maximising the correlation between blocks, and discriminating the outcome needed to be achieved, and that the weight in the design matrix could be set to \< 1 between blocks
-
-- Number of components
+    Our experience has shown that a compromise between maximising the correlation between blocks, and discriminating the outcome needed to be achieved, and that the weight in the design matrix could be set to \textless{} 1 between blocks
+  \item
+    Number of components
 
     fit a DIABLO model without variable selection to assess the global performance and choose the number of components for the final DIABLO model.
+  \item
+    keepX
 
-- keepX
+    \begin{itemize}
+    \item
+      should be used to tune the keepX parameters in the block.splsda function.
+    \item
+      We choose the optimal number of variables to select in each data set using the tune function, for a grid of keepX values
+    \item
+      the function has been set to favor the small-ish signature while allowing to obtain a sufficient number of variables for downstream validation / interpretation. See ?tune.block.splsda.
+    \item
+      We choose the optimal number of variables to select in each data set using the tune.block.splsda function, to which we provide a grid of keepX values for each type of omics
+    \item
+      the function has been set to favour the small-ish signature while allowing to obtain a sufficient number of variables for downstream validation / interpretation.
+    \item
+      The number of features to select on each component is returned in tune.TCGA\$choice.keepX.
 
-    - should be used to tune the keepX parameters in the block.splsda function.
+      Alternatively, you can manually input those parameters as indicated below.
+    \end{itemize}
+  \end{itemize}
+\item
+  Performance
 
-    - We choose the optimal number of variables to select in each data set using the tune function, for a grid of keepX values
+  \begin{itemize}
+  \item
+    We assess the performance of the model using perf() function.
+  \item
+    The method runs:
 
-    - the function has been set to favor the small-ish signature while allowing to obtain a sufficient number of variables for downstream validation / interpretation. See ?tune.block.splsda.
+    \begin{enumerate}
+    \def\labelenumii{\arabic{enumii}.}
+    \item
+      block.splsda model on the pre-specified arguments input from our sgccda.res object but on cross-validated samples
+    \item
+      assess the accuracy of the prediction on the left out samples.
+    \end{enumerate}
+  \item
+    Outputs:
 
-    -   We choose the optimal number of variables to select in each data set using the tune.block.splsda function, to which we provide a grid of keepX values for each type of omics
+    \begin{itemize}
+    \item
+      usual (balanced) classification error rates
+    \item
+      predicted dummy variables and variates
+    \item
+      stability of the selected features
+    \item
+      performance based on:
 
-    - the function has been set to favour the small-ish signature while allowing to obtain a sufficient number of variables for downstream validation / interpretation.
+      \begin{itemize}
+      \item
+        Majority Vote (each data set votes for a class for a particular test sample)
+      \item
+        weighted vote, where the weight is defined according to the correlation between the latent component associated to a particular data set and the outcome.
+      \end{itemize}
+    \end{itemize}
+  \item
+    Since the tune function was used with the centroid.dist argument, we examine the outputs of the perf function for that same distance.
 
-    - The number of features to select on each component is returned in tune.TCGA\$choice.keepX.
+    \textgreater{} set.seed(123)for reproducibility, only when the `cpus' argument is not used
 
-        Alternatively, you can manually input those parameters as indicated below.
-\end{verbatim}
+    \textgreater{} perf.diablo = perf(sgccda.res, validation = `Mfold', M = 10, nrepeat = 10, dist = `centroids.dist')
 
-3. Performance
+    \textgreater{} perf.diablo lists the different outputs
 
-\begin{verbatim}
-- We assess the performance of the model using perf() function.
+    \textgreater{} perf.diablo\$MajorityVote.error.rate Performance with Majority vote
 
-- The method runs:
+    \textgreater{} perf.diablo\$WeightedVote.error.rate Performance with Weighted prediction
 
-    1. block.splsda model on the pre-specified arguments input from our sgccda.res object but on cross-validated samples
+    \begin{enumerate}
+    \def\labelenumii{\arabic{enumii}.}
+    \item
+      Prediction on an external test set
 
-    2. assess the accuracy of the prediction on the left out samples.
+      The predict function predicts the class of samples from a test set.
 
-- Outputs:
+      \begin{itemize}
+      \item
+        In our specific case, one data set is missing in the test set but the method can still be applied.
+      \item
+        Make sure the name of the blocks correspond exactly.
+      \end{itemize}
 
-    - usual (balanced) classification error rates
+      prepare test set data: here one block (proteins) is missing
 
-    - predicted dummy variables and variates
+      data.test.TCGA = list(mRNA = breast.TCGA\$data.test\$mrna, miRNA = breast.TCGA\$data.test\$mirna)
 
-    - stability of the selected features
+      predict.diablo = predict(sgccda.res, newdata = data.test.TCGA)
 
-    - performance based on:
+      the warning message will inform us that one block is missing
 
-        - Majority Vote (each data set votes for a class for a particular test sample)
+      predict.diablo list the different outputs
 
-        - weighted vote, where the weight is defined according to the correlation between the latent component associated to a particular data set and the outcome.
+      \begin{itemize}
+      \item
+        Confusion table
 
-- Since the tune function was used with the centroid.dist argument, we examine the outputs of the perf function for that same distance.
+        \begin{itemize}
+        \item
+          The confusion table compares the real subtypes with the predicted subtypes for a 2 component model, for the distance of interest:
 
-    \> set.seed(123)for reproducibility, only when the \`cpus' argument is not used
+          confusion.mat = get.confusion\_matrix(truth = breast.TCGA\$data.test\$subtype, predicted = predict.diablo\$WeightedVote\$centroids.dist{[},2{]})
 
-    \> perf.diablo = perf(sgccda.res, validation = 'Mfold', M = 10, nrepeat = 10, dist = 'centroids.dist')
+          confusion.mat
 
-    \> perf.diablo lists the different outputs
-
-    \> perf.diablo\$MajorityVote.error.rate Performance with Majority vote
-
-    \> perf.diablo\$WeightedVote.error.rate Performance with Weighted prediction
-
-    1. Prediction on an external test set
-
-        The predict function predicts the class of samples from a test set.
-
-        - In our specific case, one data set is missing in the test set but the method can still be applied.
-
-        - Make sure the name of the blocks correspond exactly.
-
-        prepare test set data: here one block (proteins) is missing
-
-        data.test.TCGA = list(mRNA = breast.TCGA\$data.test\$mrna, miRNA = breast.TCGA\$data.test\$mirna)
-
-        predict.diablo = predict(sgccda.res, newdata = data.test.TCGA)
-
-        the warning message will inform us that one block is missing
-
-        predict.diablo list the different outputs
-
-        - Confusion table
-
-            - The confusion table compares the real subtypes with the predicted subtypes for a 2 component model, for the distance of interest:
-
-                confusion.mat = get.confusion_matrix(truth = breast.TCGA\$data.test\$subtype, predicted = predict.diablo\$WeightedVote\$centroids.dist[,2])
-
-                confusion.mat
-
-                get.BER(confusion.mat)
-\end{verbatim}
+          get.BER(confusion.mat)
+        \end{itemize}
+      \end{itemize}
+    \end{enumerate}
+  \end{itemize}
+\end{enumerate}
 
 Plots
 
@@ -5032,266 +5123,295 @@ Wilcoxon Rank Sum Test
 \hypertarget{workflow-eda-for-transcriptomics}{%
 \subsection{Workflow: EDA for Transcriptomics}\label{workflow-eda-for-transcriptomics}}
 
-1. Select meaninful variables from pheno data
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\item
+  Select meaninful variables from pheno data
+
+  \begin{itemize}
+  \item
+    check for pvca assumptions for pheno vars
+  \item
+    identify categorical variables with constant values across all samples or specific for each sample
+  \item
+    identify numerical variables with unique/constant values across all samples
+  \item
+    give a warning for numerical variables with unique values, in case they are some sort of sample identification
+  \item
+    identify variables with NA values or with NA percentage above some given threshold (values ranging from 0 to 1)
+  \end{itemize}
+\item
+  Density plot
+
+  Microarray
 
 \begin{verbatim}
-- check for pvca assumptions for pheno vars
+ Density plots give you an idea about the signal distribution across a chip.
 
-- identify categorical variables with constant values across all samples or specific for each sample
+ The default density plot function in the limma package (plotDensities) in Bioconductor plots the distribution of the red and green signals for each chip.
 
-- identify numerical variables with unique/constant values across all samples
-
-- give a warning for numerical variables with unique values, in case they are some sort of sample identification
-
-- identify variables with NA values or with NA percentage above some given threshold (values ranging from 0 to 1)
+ Arrays that have very different distributions in these images should be checked carefully in the other quality plots. Generally these arrays will show up as problematic and if so, should be removed before analysis.
 \end{verbatim}
+\item
+  Sample clustering
 
-2. Density plot
+  Clustering methods are commonly used to look for patterns in microarray data. However, they can also be used to consider data quality. Hierarchical clustering across slides allows a look at the overall trends of the data. The expectation is that slides containing the most simliar samples (e.g.~those from a replicate group exposed to the same treatment) will be most similar to each other. By checking how the slides actually group, you can identify issues such as confounding, where data is grouping according to ``uninteresting'' factors such as the date the experiment was run or the person who isolated the RNA. (Of course, your experimental design and protocols should remove any chance of this sort of thing happening\ldots.)
 
-\begin{verbatim}
-Microarray
+  Careful experimental design and scheduling should result in problems such as this being minimized. For example, if you are able to hybridize all the arrays in an experiment in a single day, using single batches of all reagents, then this is usually worth doing. If not, then careful randomisation should be applied before carrying out the experiment.
 
-    Density plots give you an idea about the signal distribution across a chip.
+  With these data, it is likely that two routes could be considered. If there were enough replicates, the single batch of slides done separately could possibly be disregarded. The other option is to use statistical methods to account for the month ``factor'' and work on the remaining residuals in considering differential effects.
 
-    The default density plot function in the limma package (plotDensities) in Bioconductor plots the distribution of the red and green signals for each chip.
+  \begin{itemize}
+  \item
+    Heatmap (1 - Cor)
+  \item
+    Dendrograms
 
-    Arrays that have very different distributions in these images should be checked carefully in the other quality plots. Generally these arrays will show up as problematic and if so, should be removed before analysis.
-\end{verbatim}
+    \begin{itemize}
+    \item
+      Complete linakge - Euclidean distance
 
-3. Sample clustering
+      \begin{itemize}
+      \item
+        Maximum dissimilarity between points in two sets used to determine which two sets should be merged.
+      \item
+        Often gives comparable cluster sizes.
+      \item
+        Less sensitive to outliers.
+      \item
+        Works better with spherical distributions.
+      \end{itemize}
+    \item
+      Single linkage
 
-\begin{verbatim}
-Clustering methods are commonly used to look for patterns in microarray data. However, they can also be used to consider data quality. Hierarchical clustering across slides allows a look at the overall trends of the data. The expectation is that slides containing the most simliar samples (e.g. those from a replicate group exposed to the same treatment) will be most similar to each other. By checking how the slides actually group, you can identify issues such as confounding, where data is grouping according to "uninteresting" factors such as the date the experiment was run or the person who isolated the RNA. (Of course, your experimental design and protocols should remove any chance of this sort of thing happening....)
+      \begin{itemize}
+      \item
+        Minimum dissimilarity between points in two sets used to determine which two sets should be merged.
+      \item
+        Can handle diverse shapes.
+      \item
+        Very sensitive to outliers or noise.
+      \item
+        Often results in unbalanced clusters.
+      \item
+        Extended, trailing clusters in which observations fused one at a time-chaining.
+      \end{itemize}
+    \item
+      Average linkage
 
-Careful experimental design and scheduling should result in problems such as this being minimized. For example, if you are able to hybridize all the arrays in an experiment in a single day, using single batches of all reagents, then this is usually worth doing. If not, then careful randomisation should be applied before carrying out the experiment.
+      \begin{itemize}
+      \item
+        Average dissimilarity between points in two sets used to determine which two sets should be merged.
+      \item
+        A compromise between single and complete linkage.
+      \item
+        Less sensitive to outliers.
+      \item
+        Works better with spherical distributions.
+      \item
+        Similar linkage: Ward's linkage. Join objects that minimize Euclidean distance / average Euclidean distance
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\item
+  MA plot
 
-With these data, it is likely that two routes could be considered. If there were enough replicates, the single batch of slides done separately could possibly be disregarded. The other option is to use statistical methods to account for the month "factor" and work on the remaining residuals in considering differential effects.
-
-- Heatmap (1 - Cor)
-
-- Dendrograms
-
-    - Complete linakge - Euclidean distance
-
-         - Maximum dissimilarity between points in two sets used to determine which two sets should be merged.
-
-         - Often gives comparable cluster sizes.
-
-         - Less sensitive to outliers.
-
-         - Works better with spherical distributions.
-
-
-
-    - Single linkage
-
-         - Minimum dissimilarity between points in two sets used to determine which two sets should be merged.
-
-         - Can handle diverse shapes.
-
-         - Very sensitive to outliers or noise.
-
-         - Often results in unbalanced clusters.
-
-         - Extended, trailing clusters in which observations fused one at a time-chaining.
-
-    - Average linkage
-
-         - Average dissimilarity between points in two sets used to determine which two sets should be merged.
-
-         - A compromise between single and complete linkage.
-
-         - Less sensitive to outliers.
-
-         - Works better with spherical distributions.
-
-         - Similar linkage: Ward's linkage. Join objects that minimize Euclidean distance / average Euclidean distance
-\end{verbatim}
-
-4. MA plot
-
-\begin{verbatim}
-- Microarray data
+  \begin{itemize}
+  \item
+    Microarray data
 
     MAplots show the relationship of signal ratios to signal intensities, where values are usually reported on the log2 scale.
 
-    For a large chip where most data is not expressed at different levels across the treatments, after normalisation you expect of the data to fall approximately along a straight horizontal line along 0. Before normalisation, you may see that the line along which the majority of the data is clustered is curved, reflecting the dye bias of some genes. One aim of normalisation with two colour arrays is to "straighten out" this line.
+    For a large chip where most data is not expressed at different levels across the treatments, after normalisation you expect of the data to fall approximately along a straight horizontal line along 0. Before normalisation, you may see that the line along which the majority of the data is clustered is curved, reflecting the dye bias of some genes. One aim of normalisation with two colour arrays is to ``straighten out'' this line.
+  \item
+    RNA-Seq data
+  \end{itemize}
+\item
+  PVCA
 
-- RNA-Seq data
-\end{verbatim}
+  \begin{itemize}
+  \item
+    estimate the variability of experimental effects including batch
+  \item
+    The PVCA approach can be used as a screening tool to determine which sources of variability (biological, technical or other) are most prominent in a given microarray data set.
+  \item
+    leverages the strengths of two very popular data analysis methods:
 
-5. PVCA
+    \begin{enumerate}
+    \def\labelenumii{\arabic{enumii}.}
+    \item
+      principal component analysis (PCA) is used to efficiently reduce data dimension with maintaining the majority of the variability in the data
+    \item
+      variance components analysis (VCA) fits a mixed linear model using factors of interest as random effects to estimate and partition the total variability.
+    \end{enumerate}
+  \item
+    Using the eigenvalues associated with their corresponding eigenvectors as weights, associated variations of all factors are standardized and the magnitude of each source of variability (including each batch effect) is presented as a proportion of total variance.
+  \item
+    Although PVCA is a generic approach for quantifying the corresponding proportion of variation of each effect, it can be a handy assessment for estimating batch effect before and after batch normalization.
+  \end{itemize}
+\item
+  RLE
+
+  \begin{itemize}
+  \item
+    \href{https://arxiv.org/pdf/1704.03590.pdf}{RLE Plots: Visualising Unwanted Variation in High Dimensional Data}
+  \item
+    are a powerful tool for visualising such variation in high dimensional data
+  \item
+    are particularly useful for assessing whether a procedure aimed at removing unwanted variation, i.e.~a normalisation procedure, has been successful.
+  \end{itemize}
+\item
+  Multidimensional Scaling (MDS)
+
+  \begin{itemize}
+  \item
+    Alternative dimensionality reduction approach
+  \item
+    Represents distances in 2D or 3D space
+  \item
+    Starts from distance matrix (PCA uses data points)
+  \end{itemize}
+\item
+  EDA with mixOmics
+
+  8.1 PCA
 
 \begin{verbatim}
-- estimate the variability of experimental effects including batch
+ Principal Component Analysis (Jolliffe, 2005) is primarily used to explore one single type of 'omics data (e.g. transcriptomics, proteomics, metabolomics, etc) and identify the largest sources of variation. PCA is a mathematical procedure that uses orthogonal linear transformation of data from possibly correlated variables into uncorrelated principal components (PCs). The first principal component explains as much of the variability in the data as possible, and each following PC explains as much of the remaining variability as possible. Only the PCs which explain the most variance are retained. This is why choosing the number of dimensions or components (ncomp) is crucial (see the function tune.pca, below).
 
-- The PVCA approach can be used as a screening tool to determine which sources of variability (biological, technical or other) are most prominent in a given microarray data set.
+ - In mixOmics, PCA is numerically solved in two ways:
 
-- leverages the strengths of two very popular data analysis methods:
+     1. With singular value decomposition (SVD) of the data matrix,which is the most computationally efficient way and is also adopted by most softwares and the R function prcomp in the stat package.
 
-    1. principal component analysis (PCA) is used to efficiently reduce data dimension with maintaining the majority of the variability in the data
+     2. With the Non-linear Iterative Partial Least Squares (NIPALS) in the case of missing values, which uses an iterative power method. See Methods: Missing values.
 
-    2. variance components analysis (VCA) fits a mixed linear model using factors of interest as random effects to estimate and partition the total variability.
+ - Input data should be centered (center = TRUE) and possibly (sometimes preferably) scaled so that all variables have a unit variance. This is especially advised in the case where the variance is not homogeneous across variables (scale = TRUE). By default, the variables are centered and scaled in the function, but the user is free to choose other options.
 
-- Using the eigenvalues associated with their corresponding eigenvectors as weights, associated variations of all factors are standardized and the magnitude of each source of variability (including each batch effect) is presented as a proportion of total variance.
+ Choosing the optimal parameters
 
-- Although PVCA is a generic approach for quantifying the corresponding proportion of variation of each effect, it can be a handy assessment for estimating batch effect before and after batch normalization.
+     We can obtain as many dimensions (i.e. number of PCs) as the minimum between the number of samples and variables. However, the goal is to reduce the complexity of the data and therefore summarize the data in fewer underlying dimension.
+
+     The number of principal Components to retain (also called the number of dimensions) is therefore crucial when performing PCA. The function tune.pca will plot the barplot of the proportion of explained variance for min(n, p)principal components, where n is the number of samples, and p the number of variables.
+
+     tune.pca(X, ncomp = 10, center = TRUE, scale = FALSE)
 \end{verbatim}
 
-6. RLE
+  8.2 IPCA
 
 \begin{verbatim}
-- RLE Plots: Visualising Unwanted Variation in High Dimensional Data
+ Independant Principal Component Analysis
 
-    <https://arxiv.org/pdf/1704.03590.pdf>
+ In some case studies, we have identified some limitations when using PCA:
 
-- are a powerful tool for visualising such variation in high dimensional data
+     - PCA assumes that gene expression follows a multivariate normal distribution and recent studies have demonstrated that microarray gene expression measurements follow instead a super-Gaussian distribution.
 
-- are particularly useful for assessing whether a procedure aimed at removing unwanted variation, i.e. a normalisation procedure, has been successful.
+     - PCA decomposes the data based on the maximization of its variance. In some cases, the biological question may not be related to the highest variance in the data.
+
+ Instead, we propose to apply Independent Principal Component Analysis (IPCA) which combines the advantages of both PCA and Independent Component Analysis (ICA). It uses ICA as a denoising process of the loading vectors produced by PCA to better highlight the important biological entities and reveal insightful patterns in the data. A sparse version is also proposed (sIPCA). This approach was proposed in collaboration with Eric F. Yao (QFAB and University of Shanghai).
+
+ The algorithm of IPCA is as follows:
+
+     1. The original data matrix is centered (by default).
+
+     2. PCA is used to reduce dimension and generate the loading vectors.
+
+     3. ICA (FastICA) is implemented on the loading vectors to generate independent loading vectors.
+
+     4. The centered data matrix is projected on the independent loading vectors to obtain the independent principal components.
+
+
+
+ IPCA offers a better visualization of the data than ICA and with a smaller number of components than PCA.
+
+
+
+ Choosing the optimal parameters
+
+     The number of variables to select is still an open issue. In Yao et al (2012) we proposed to use the Davies Bouldin measure which is an index of crisp cluster validity. This index compares the within-cluster scatter with the between-cluster separation.
+
+ IPCA is of class sPCA and PCA, and most of the PCA graphical methods can be applied. The default algorithm to estimate the unmixing matrix is set to mode = 'deflation'. By default, the data are centered, but not necessarily scaled.
+
+ Kurtosis
+
+     The kurtosis measure is used to order the loading vectors to order the Independent Principal Components. We have shown that the kurtosis value is a good post hoc indicator of the number of components to choose, as a sudden drop in the values corresponds to irrelevant dimensions.
+
+
+
+     ipca.res\$kurtosis
 \end{verbatim}
 
-7. Multidimensional Scaling (MDS)
+  8.3 PLS-DA
 
 \begin{verbatim}
-- Alternative dimensionality reduction approach
+ PLS Discriminant Analysis (PLS-DA)
 
-- Represents distances in 2D or 3D space
+     Partial Least Squares was not originally designed for classification and discrimination problems, but has often been used for that purpose (Nguyen and Rocke, 2002; Tan et al., 2004). The response matrix Y is qualitative and is internally recoded as a dummy block matrix that records the membership of each observation, i.e. each of the response categories are coded via an indicator variable. The PLS regression (now PLS-DA) is then run as if Y was a continuous matrix and works well in practice for large data sets where Linear Discriminant Analysis faces collinearity issues.
 
-- Starts from distance matrix (PCA uses data points)
+         - PLS-Discriminant Analysis (PLS-DA, Barker and Rayens, 2003) is a linear classification model that is able to predict the class of new samples.
+
+         - sparse PLS-DA (sPLS-DA) enables the selection of the most predictive or discriminative features in the data that help classify the samples (Lê Cao et al., 2011).
+
+     Similar to a PLS-regression mode, the tuning parameters include the number of dimensions or components ncomp. We can rely on the estimation of the classification error rate using cross-validation.
+
+         plsda.res \<- plsda(X, Y, ncomp = 5) where ncomp is the number of components wanted
+
+     We use the function perf to evaluate a PLS-DA model, using 5-fold cross-validation repeated 10 times (for an accurate estimation, consider 50-100 repeats when using fold-CV -- no repeat is necessary with loo-CV). In addition, the function is useful to decide on the optimal number of components to choose (either for PLSDA or sPLSDA, see the case study). The Balanced Error Rate (BER) and overall error rate is displayed for all prediction distances (see ?predict and details in suppl info in Rohart et al. (2017)):
+
+         set.seed(2543) for reproducibility here, only when the \`cpus' argument is not used
+
+         perf.plsda \<- perf(plsda.res, validation = "Mfold", folds = 5, progressBar = FALSE, auc = TRUE, nrepeat = 10)
+
+
+
+         perf.plsda.srbct\$error.rate error rates
+
+         plot(perf.plsda, col = color.mixo(1:3), sd = TRUE, legend.position = "horizontal")
+
+     Here ncomp = 4 with max distance seems to achieve the best classification performance and can be retained for the final model, or for the sparse PLSDA model.
+
+     The AUROC can also be plotted, beware that it only complements the PLSDA performance results (see Rohart et al. (2017) for more details).
 \end{verbatim}
 
-8. EDA with mixOmics
-
-\begin{verbatim}
-8.1 PCA
-
-    Principal Component Analysis (Jolliffe, 2005) is primarily used to explore one single type of 'omics data (e.g. transcriptomics, proteomics, metabolomics, etc) and identify the largest sources of variation. PCA is a mathematical procedure that uses orthogonal linear transformation of data from possibly correlated variables into uncorrelated principal components (PCs). The first principal component explains as much of the variability in the data as possible, and each following PC explains as much of the remaining variability as possible. Only the PCs which explain the most variance are retained. This is why choosing the number of dimensions or components (ncomp) is crucial (see the function tune.pca, below).
-
-    - In mixOmics, PCA is numerically solved in two ways:
-
-        1. With singular value decomposition (SVD) of the data matrix,which is the most computationally efficient way and is also adopted by most softwares and the R function prcomp in the stat package.
-
-        2. With the Non-linear Iterative Partial Least Squares (NIPALS) in the case of missing values, which uses an iterative power method. See Methods: Missing values.
-
-    - Input data should be centered (center = TRUE) and possibly (sometimes preferably) scaled so that all variables have a unit variance. This is especially advised in the case where the variance is not homogeneous across variables (scale = TRUE). By default, the variables are centered and scaled in the function, but the user is free to choose other options.
-
-    Choosing the optimal parameters
-
-        We can obtain as many dimensions (i.e. number of PCs) as the minimum between the number of samples and variables. However, the goal is to reduce the complexity of the data and therefore summarize the data in fewer underlying dimension.
-
-        The number of principal Components to retain (also called the number of dimensions) is therefore crucial when performing PCA. The function tune.pca will plot the barplot of the proportion of explained variance for min(n, p)principal components, where n is the number of samples, and p the number of variables.
-
-        tune.pca(X, ncomp = 10, center = TRUE, scale = FALSE)
-
-8.2 IPCA
-
-    Independant Principal Component Analysis
-
-    In some case studies, we have identified some limitations when using PCA:
-
-        - PCA assumes that gene expression follows a multivariate normal distribution and recent studies have demonstrated that microarray gene expression measurements follow instead a super-Gaussian distribution.
-
-        - PCA decomposes the data based on the maximization of its variance. In some cases, the biological question may not be related to the highest variance in the data.
-
-    Instead, we propose to apply Independent Principal Component Analysis (IPCA) which combines the advantages of both PCA and Independent Component Analysis (ICA). It uses ICA as a denoising process of the loading vectors produced by PCA to better highlight the important biological entities and reveal insightful patterns in the data. A sparse version is also proposed (sIPCA). This approach was proposed in collaboration with Eric F. Yao (QFAB and University of Shanghai).
-
-    The algorithm of IPCA is as follows:
-
-        1. The original data matrix is centered (by default).
-
-        2. PCA is used to reduce dimension and generate the loading vectors.
-
-        3. ICA (FastICA) is implemented on the loading vectors to generate independent loading vectors.
-
-        4. The centered data matrix is projected on the independent loading vectors to obtain the independent principal components.
-
-
-
-    IPCA offers a better visualization of the data than ICA and with a smaller number of components than PCA.
-
-
-
-    Choosing the optimal parameters
-
-        The number of variables to select is still an open issue. In Yao et al (2012) we proposed to use the Davies Bouldin measure which is an index of crisp cluster validity. This index compares the within-cluster scatter with the between-cluster separation.
-
-    IPCA is of class sPCA and PCA, and most of the PCA graphical methods can be applied. The default algorithm to estimate the unmixing matrix is set to mode = 'deflation'. By default, the data are centered, but not necessarily scaled.
-
-    Kurtosis
-
-        The kurtosis measure is used to order the loading vectors to order the Independent Principal Components. We have shown that the kurtosis value is a good post hoc indicator of the number of components to choose, as a sudden drop in the values corresponds to irrelevant dimensions.
-
-
-
-        ipca.res\$kurtosis
-
-8.3 PLS-DA
-
-    PLS Discriminant Analysis (PLS-DA)
-
-        Partial Least Squares was not originally designed for classification and discrimination problems, but has often been used for that purpose (Nguyen and Rocke, 2002; Tan et al., 2004). The response matrix Y is qualitative and is internally recoded as a dummy block matrix that records the membership of each observation, i.e. each of the response categories are coded via an indicator variable. The PLS regression (now PLS-DA) is then run as if Y was a continuous matrix and works well in practice for large data sets where Linear Discriminant Analysis faces collinearity issues.
-
-            - PLS-Discriminant Analysis (PLS-DA, Barker and Rayens, 2003) is a linear classification model that is able to predict the class of new samples.
-
-            - sparse PLS-DA (sPLS-DA) enables the selection of the most predictive or discriminative features in the data that help classify the samples (Lê Cao et al., 2011).
-
-        Similar to a PLS-regression mode, the tuning parameters include the number of dimensions or components ncomp. We can rely on the estimation of the classification error rate using cross-validation.
-
-            plsda.res \<- plsda(X, Y, ncomp = 5) where ncomp is the number of components wanted
-
-        We use the function perf to evaluate a PLS-DA model, using 5-fold cross-validation repeated 10 times (for an accurate estimation, consider 50-100 repeats when using fold-CV -- no repeat is necessary with loo-CV). In addition, the function is useful to decide on the optimal number of components to choose (either for PLSDA or sPLSDA, see the case study). The Balanced Error Rate (BER) and overall error rate is displayed for all prediction distances (see ?predict and details in suppl info in Rohart et al. (2017)):
-
-            set.seed(2543) for reproducibility here, only when the \`cpus' argument is not used
-
-            perf.plsda \<- perf(plsda.res, validation = "Mfold", folds = 5, progressBar = FALSE, auc = TRUE, nrepeat = 10)
-
-
-
-            perf.plsda.srbct\$error.rate error rates
-
-            plot(perf.plsda, col = color.mixo(1:3), sd = TRUE, legend.position = "horizontal")
-
-        Here ncomp = 4 with max distance seems to achieve the best classification performance and can be retained for the final model, or for the sparse PLSDA model.
-
-        The AUROC can also be plotted, beware that it only complements the PLSDA performance results (see Rohart et al. (2017) for more details).
-
-
-
-9. MDP
-\end{verbatim}
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{8}
+  \tightlist
+  \item
+    MDP
+  \end{enumerate}
+\end{enumerate}
 
 See:
 
 \begin{verbatim}
-PCA, MDS, k-means, Hierarchical clustering and heatmap for microarray data
+[PCA, MDS, k-means, Hierarchical clustering and heatmap for microarray data](https://rstudio-pubs-static.s3.amazonaws.com/93706_e3f683a8d77244a5b993b20ad6278f4b.html)
 
-    <https://rstudio-pubs-static.s3.amazonaws.com/93706_e3f683a8d77244a5b993b20ad6278f4b.html>
-
-A Tutorial Review of Microarray Data Analysis
-
-    <http://www.ub.edu/stat/docencia/bioinformatica/microarrays/ADM/slides/A_Tutorial_Review_of_Microarray_data_Analysis_17-06-08.pdf>
+[A Tutorial Review of Microarray Data Analysis](http://www.ub.edu/stat/docencia/bioinformatica/microarrays/ADM/slides/A_Tutorial_Review_of_Microarray_data_Analysis_17-06-08.pdf)
 \end{verbatim}
 
 \hypertarget{dimensionality-reduction}{%
 \section{Dimensionality Reduction}\label{dimensionality-reduction}}
 
-PCA (linear)
-
-t-SNE (non-parametric/ nonlinear)
-
-Sammon mapping (nonlinear)
-
-Isomap (nonlinear)
-
-LLE (nonlinear)
-
-CCA (nonlinear)
-
-SNE (nonlinear)
-
-MVU (nonlinear)
-
-Laplacian Eigenmaps (nonlinear)
+\begin{itemize}
+\item
+  PCA (linear)
+\item
+  t-SNE (non-parametric/ nonlinear)
+\item
+  Sammon mapping (nonlinear)
+\item
+  Isomap (nonlinear)
+\item
+  LLE (nonlinear)
+\item
+  CCA (nonlinear)
+\item
+  SNE (nonlinear)
+\item
+  MVU (nonlinear)
+\item
+  Laplacian Eigenmaps (nonlinear)
+\end{itemize}
 
 PCA is a linear algorithm. It will not be able to interpret complex polynomial relationship between features. On the other hand, t-SNE is based on probability distributions with random walk on neighborhood graphs to find the structure within the data.
 
@@ -5304,9 +5424,7 @@ It is important to know that most of the nonlinear techniques other than t-SNE a
 tSNE
 
 \begin{verbatim}
-Algorithm
-
-    <https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/>
+[Algorithm](https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/)
 
     10. Common Fallacies
 \end{verbatim}

@@ -21,7 +21,7 @@ quality-control
 biomarkers
 pathway-analysis
 pipeline
-section-1
+section
 network-analysis
 co-expression-analysis
 data-driven-analysis-of-susceptibility-to-pneumococcal-carriage

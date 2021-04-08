@@ -317,7 +317,7 @@ Unknowns:
 
 \- PPLR
 
-1\. Background
+1) Background
 
 		- estimating expression from short sequence reads poses unique problems such as accurate read alignment in the presence of sequencing errors, measurement bias depending on library preparation methodology, and complexity in estimating the expression of distinct mRNA transcripts with shared exons.
 
@@ -365,7 +365,7 @@ Unknowns:
 
 	stream applications for type I and type II errors.
 
-2\. Methods
+2) Methods
 
 	2.1 Samples
 
@@ -475,7 +475,7 @@ Unknowns:
 
 		Precision was calculated as the number of significant genes in the intersection of the test RNA-Seq dataset with the reference dataset, divided by the number of genes identified as significant in the test RNA-Seq dataset.
 
-3\. Results and discussion
+3) Results and discussion
 
 	3.1 Generation of a real-world RNA-Seq dataset for benchmarking
 
@@ -563,7 +563,7 @@ Unknowns:
 
 		Importantly, when selecting a pipeline it is essential to consider not only the specific tools selected at each stage of the workflow, but also how they interact with one another.
 
-4\. Conclusions
+4) Conclusions
 
 ## Network Analysis
 
@@ -745,7 +745,7 @@ Technologies:
 
 #### STAR
 
-1\. Basic Workflow
+1) Basic Workflow
 
 	1. Generate genome indexes files
 
@@ -1219,21 +1219,21 @@ loadings: the weight by which each standardized original variable should be mult
 
 you should have tabular data organized with n rows and p+1 columns, where there is one column corresponding to your dependent variable (usually denoted Y) and p columns corresponding to each of your independent variables (the matrix of which is usually denoted X).
 
-1\. Separate your data into Y and X, as defined above --- we'll mostly be working with X.
+1) Separate your data into Y and X, as defined above --- we'll mostly be working with X.
 
-2\. Take the matrix of independent variables X and, for each column, subtract the mean of that column from each entry. (This ensures that each column has a mean of zero.)
+2) Take the matrix of independent variables X and, for each column, subtract the mean of that column from each entry. (This ensures that each column has a mean of zero.)
 
-3\. Decide whether or not to standardize. Given the columns of X, are features with higher variance more important than features with lower variance, or is the importance of features independent of the variance? (In this case, importance means how well that feature predicts Y.) If the importance of features is independent of the variance of the features, then divide each observation in a column by that column's standard deviation. (This, combined with step 2, standardizes each column of X to make sure each column has mean zero and standard deviation 1.) Call the centered (and possibly standardized) matrix Z.
+3) Decide whether or not to standardize. Given the columns of X, are features with higher variance more important than features with lower variance, or is the importance of features independent of the variance? (In this case, importance means how well that feature predicts Y.) If the importance of features is independent of the variance of the features, then divide each observation in a column by that column's standard deviation. (This, combined with step 2, standardizes each column of X to make sure each column has mean zero and standard deviation 1.) Call the centered (and possibly standardized) matrix Z.
 
-4\. Take the matrix Z, transpose it, and multiply the transposed matrix by Z. (Writing this out mathematically, we would write this as ZᵀZ.) The resulting matrix is the covariance matrix of Z, up to a constant.
+4) Take the matrix Z, transpose it, and multiply the transposed matrix by Z. (Writing this out mathematically, we would write this as ZᵀZ.) The resulting matrix is the covariance matrix of Z, up to a constant.
 
-5\. (This is probably the toughest step to follow --- stick with me here.) Calculate the eigenvectors and their corresponding eigenvalues of ZᵀZ. This is quite easily done in most computing packages--- in fact, the eigendecomposition of ZᵀZ is where we decompose ZᵀZ into PDP⁻¹, where P is the matrix of eigenvectors and D is the diagonal matrix with eigenvalues on the diagonal and values of zero everywhere else. The eigenvalues on the diagonal of D will be associated with the corresponding column in P --- that is, the first element of D is λ₁ and the corresponding eigenvector is the first column of P. This holds for all elements in D and their corresponding eigenvectors in P. We will always be able to calculate PDP⁻¹ in this fashion. (Bonus: for those interested, we can always calculate PDP⁻¹ in this fashion because ZᵀZ is a symmetric, positive semidefinite matrix.)
+5) (This is probably the toughest step to follow --- stick with me here.) Calculate the eigenvectors and their corresponding eigenvalues of ZᵀZ. This is quite easily done in most computing packages--- in fact, the eigendecomposition of ZᵀZ is where we decompose ZᵀZ into PDP⁻¹, where P is the matrix of eigenvectors and D is the diagonal matrix with eigenvalues on the diagonal and values of zero everywhere else. The eigenvalues on the diagonal of D will be associated with the corresponding column in P --- that is, the first element of D is λ₁ and the corresponding eigenvector is the first column of P. This holds for all elements in D and their corresponding eigenvectors in P. We will always be able to calculate PDP⁻¹ in this fashion. (Bonus: for those interested, we can always calculate PDP⁻¹ in this fashion because ZᵀZ is a symmetric, positive semidefinite matrix.)
 
-6\. Take the eigenvalues λ₁, λ₂, ..., λp and sort them from largest to smallest. In doing so, sort the eigenvectors in P accordingly. (For example, if λ₂ is the largest eigenvalue, then take the second column of P and place it in the first column position.) Depending on the computing package, this may be done automatically. Call this sorted matrix of eigenvectors P\*. (The columns of P\* should be the same as the columns of P, but perhaps in a different order.) Note that these eigenvectors are independent of one another.
+6) Take the eigenvalues λ₁, λ₂, ..., λp and sort them from largest to smallest. In doing so, sort the eigenvectors in P accordingly. (For example, if λ₂ is the largest eigenvalue, then take the second column of P and place it in the first column position.) Depending on the computing package, this may be done automatically. Call this sorted matrix of eigenvectors P\*. (The columns of P\* should be the same as the columns of P, but perhaps in a different order.) Note that these eigenvectors are independent of one another.
 
-7\. Calculate Z\* = ZP\*. This new matrix, Z\*, is a centered/standardized version of X but now each observation is a combination of the original variables, where the weights are determined by the eigenvector. As a bonus, because our eigenvectors in P\* are independent of one another, each column of Z\* is also independent of one another!
+7) Calculate Z\* = ZP\*. This new matrix, Z\*, is a centered/standardized version of X but now each observation is a combination of the original variables, where the weights are determined by the eigenvector. As a bonus, because our eigenvectors in P\* are independent of one another, each column of Z\* is also independent of one another!
 
-8\. Finally, we need to determine how many features to keep versus how many to drop. There are three common methods to determine this, discussed below and followed by an explicit example:
+8) Finally, we need to determine how many features to keep versus how many to drop. There are three common methods to determine this, discussed below and followed by an explicit example:
 
 	- Method 1: We arbitrarily select how many dimensions we want to keep. Perhaps I want to visually represent things in two dimensions, so I may only keep two features. This is use-case dependent and there isn't a hard-and-fast rule for how many features I should pick.
 
@@ -1305,7 +1305,7 @@ resources:
 
 N-Integration discriminant analysis with DIABLO
 
-1\. Data Input
+1) Data Input
 
 The data for mixDIABLO need to be set up as a list of data matrices matching the same samples.
 
@@ -1315,7 +1315,7 @@ The blocks:
 
 	The outcome Y is set as a factor for the supervised analysis. Here Y corresponds to the PAM50 classification.
 
-2\. Tunning
+2) Tunning
 
 	- Matrix design
 
@@ -1351,7 +1351,7 @@ The blocks:
 
 			Alternatively, you can manually input those parameters as indicated below.
 
-3\. Performance
+3) Performance
 
 	- We assess the performance of the model using perf() function.
 
@@ -3617,7 +3617,7 @@ Rank tests
 
 ### Workflow: EDA for Transcriptomics
 
-1\. Select meaninful variables from pheno data
+1) Select meaninful variables from pheno data
 
 	- check for pvca assumptions for pheno vars
 
@@ -3629,7 +3629,7 @@ Rank tests
 
 	- identify variables with NA values or with NA percentage above some given threshold (values ranging from 0 to 1)
 
-2\. Density plot
+2) Density plot
 
 	Microarray
 
@@ -3639,7 +3639,7 @@ Rank tests
 
 		Arrays that have very different distributions in these images should be checked carefully in the other quality plots. Generally these arrays will show up as problematic and if so, should be removed before analysis.
 
-3\. Sample clustering
+3) Sample clustering
 
 	Clustering methods are commonly used to look for patterns in microarray data. However, they can also be used to consider data quality. Hierarchical clustering across slides allows a look at the overall trends of the data. The expectation is that slides containing the most simliar samples (e.g. those from a replicate group exposed to the same treatment) will be most similar to each other. By checking how the slides actually group, you can identify issues such as confounding, where data is grouping according to "uninteresting" factors such as the date the experiment was run or the person who isolated the RNA. (Of course, your experimental design and protocols should remove any chance of this sort of thing happening....)
 
@@ -3687,7 +3687,7 @@ Rank tests
 
 			 - Similar linkage: Ward's linkage. Join objects that minimize Euclidean distance / average Euclidean distance
 
-4\. MA plot
+4) MA plot
 
 	- Microarray data
 
@@ -3697,7 +3697,7 @@ Rank tests
 
 	- RNA-Seq data
 
-5\. PVCA
+5) PVCA
 
 	- estimate the variability of experimental effects including batch
 
@@ -3713,17 +3713,15 @@ Rank tests
 
 	- Although PVCA is a generic approach for quantifying the corresponding proportion of variation of each effect, it can be a handy assessment for estimating batch effect before and after batch normalization.
 
-6\. RLE
+6) RLE
 
-	- RLE Plots: Visualising Unwanted Variation in High Dimensional Data
-
-		<https://arxiv.org/pdf/1704.03590.pdf>
+	- [RLE Plots: Visualising Unwanted Variation in High Dimensional Data](https://arxiv.org/pdf/1704.03590.pdf)
 
 	- are a powerful tool for visualising such variation in high dimensional data
 
 	- are particularly useful for assessing whether a procedure aimed at removing unwanted variation, i.e. a normalisation procedure, has been successful.
 
-7\. Multidimensional Scaling (MDS)
+7) Multidimensional Scaling (MDS)
 
 	- Alternative dimensionality reduction approach
 
@@ -3731,7 +3729,7 @@ Rank tests
 
 	- Starts from distance matrix (PCA uses data points)
 
-8\. EDA with mixOmics
+8) EDA with mixOmics
 
 	8.1 PCA
 
@@ -3831,33 +3829,29 @@ Rank tests
 
 See:
 
-	PCA, MDS, k-means, Hierarchical clustering and heatmap for microarray data
+	[PCA, MDS, k-means, Hierarchical clustering and heatmap for microarray data](https://rstudio-pubs-static.s3.amazonaws.com/93706_e3f683a8d77244a5b993b20ad6278f4b.html)
 
-		<https://rstudio-pubs-static.s3.amazonaws.com/93706_e3f683a8d77244a5b993b20ad6278f4b.html>
-
-	A Tutorial Review of Microarray Data Analysis
-
-		<http://www.ub.edu/stat/docencia/bioinformatica/microarrays/ADM/slides/A_Tutorial_Review_of_Microarray_data_Analysis_17-06-08.pdf>
+	[A Tutorial Review of Microarray Data Analysis](http://www.ub.edu/stat/docencia/bioinformatica/microarrays/ADM/slides/A_Tutorial_Review_of_Microarray_data_Analysis_17-06-08.pdf)
 
 ## Dimensionality Reduction
 
-PCA (linear)
+- PCA (linear)
 
-t-SNE (non-parametric/ nonlinear)
+- t-SNE (non-parametric/ nonlinear)
 
-Sammon mapping (nonlinear)
+- Sammon mapping (nonlinear)
 
-Isomap (nonlinear)
+- Isomap (nonlinear)
 
-LLE (nonlinear)
+- LLE (nonlinear)
 
-CCA (nonlinear)
+- CCA (nonlinear)
 
-SNE (nonlinear)
+- SNE (nonlinear)
 
-MVU (nonlinear)
+- MVU (nonlinear)
 
-Laplacian Eigenmaps (nonlinear)
+- Laplacian Eigenmaps (nonlinear)
 
 PCA is a linear algorithm. It will not be able to interpret complex polynomial relationship between features. On the other hand, t-SNE is based on probability distributions with random walk on neighborhood graphs to find the structure within the data.
 
@@ -3869,9 +3863,7 @@ It is important to know that most of the nonlinear techniques other than t-SNE a
 
 tSNE
 
-	Algorithm
-
-		<https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/>
+	[Algorithm](https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/)
 
 		10. Common Fallacies
 
